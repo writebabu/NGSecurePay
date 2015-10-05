@@ -30,7 +30,7 @@
 			        <div id="divCenterTabsContent" runat="server">
                         Virtual Card is a feature enabled for all customers who can attach all their Credit / Debit cards for making the payment in  secure way and without providing the details for each & every transaction.
 
-                        By providing this feature to the customers, Verizon ensures to strengthen the security and not sharing the customer card details to any Third party.
+                        By providing this feature to the customers, Verizon ensures to strengthen the security and not sharing the customer card details to any Third party. ok
 			        </div>            
 			    </section>
 			</section>
