@@ -1,0 +1,481 @@
+<!doctype html>
+<!--[if IE 6]><html lang="en" class="no-js ie6"><![endif]-->
+<!--[if (gt IE 6)|!(IE)]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no' />    
+    <title>Verizon | VDSI Intranet</title>
+    <link rel="stylesheet" href="includes/css/reset.css" />
+    <link rel="stylesheet" href="includes/css/text.css" />
+    <link rel="stylesheet" href="includes/css/960.css" />
+    <link rel="stylesheet" href="includes/css/jquery.modalpopup.css" />
+    <link rel="stylesheet" href="includes/css/buttons.css" />
+    <!--Custom Verizon CSS not part of 960gs-->
+    <link rel="stylesheet" href="includes/css/vzomegalight.css" />
+    <link rel="stylesheet" href="includes/css/global.css" />
+
+    <script src="includes/js/modernizr.js" type="text/javascript"></script>
+
+    <script src="includes/js/jquery.js" type="text/javascript"></script>
+
+    <script src="includes/js/slider.js" type="text/javascript"></script>
+
+    <script src="includes/js/modalpopup.js" type="text/javascript"></script>
+
+    <!--Media Queries-->
+    <!-- Target iPhone -->
+    <link href='css/handheld.css' media='only screen and (max-width: 480px)' rel='stylesheet'
+        type='text/css'>
+    <!-- Target iPad -->
+    <link rel="stylesheet" href="includes/css/tablet.css" media="only screen and (min-width:768px) and (max-width:1024px)" />
+    <!-- Target Galaxy Tab -->
+    <link rel="stylesheet" href="includes/css/tablet.css" media="only screen and (min-width:1280px) and (max-width:1280px)" />
+    <link rel="stylesheet" href="includes/css/tablet.css" media="only screen and (min-width:800px) and (max-width:800px)" />
+</head>
+<body>
+    <div id="page">
+        <header id="globalHeader">
+    <script language="javascript" type="text/javascript">
+        $('#globalHeader').load('page_includes/global_header.html', function() {
+            selectSubNav = 0; //-- Change the value to set selected sub nav item
+            $($('.globalnav li').get(selectSubNav)).addClass('active')
+        });
+	</script>
+  </header>
+        <!--Content START-->
+        <div class="content_container">
+            <div class="container_12">
+                <section id="title_section">
+		<div class="grid_8">
+			<h1 class="pagetitle">VDS India Highlights</h1>
+			<p class="breadcrumb">
+				Home /
+			</p>
+		</div>
+		<div class="grid_4">
+			<h2 class="user vztip bottomRight" rel="userTipContent"><span>Welcome <a href="javascript:;">Satya!</a></span><i class="ix"></i><img src="images/content/user_thmb.jpg" alt="Satya" title="Satya"/></h2>
+			<div class="tip_content " id="userTipContent" x="-4" y="3">
+				<div class="userInfo">
+					<img src="images/content/user_large.jpg" alt="Satya" title="Satya" class="user"/>
+					<div class="userLinks">
+						<h3>Satya V</h3>
+						<a href="javascript:void(0);">My Profile</a><a href="javascript:void(0);">View by EID</a><a href="javascript:void(0);">Not Satya?</a>
+						<div class="more">
+							<a href="javascript:void(0);">Sign Out</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clear">
+		</div>
+		</section>
+                <section class="topContainer">
+		<div class=" h200 w940">
+			<article class="health_content">
+			<section class="content-slider-container">
+			<section class="content-slider">
+			<article class="slider-feature">
+			<article class="slider-feature">
+			<a target="blank" href="http://myvzweb.verizon.com/intranet/appmanager/verizon/myportal?_nfpb=true&_pageLabel=intranetvz_portal_dynamic_contents_page&contentid=INTRANET_097907&portletTitle=Company%20News" target="blank"><img src="images/content/intranet_097906.jpg" alt="Voice of VDSI"/></a></article>
+			<a href="http://vdsindia.verizon.com/authenticated/HomePages/CMS/News.aspx?pagename=News_DialSantosh_Jan2013" target="blank"><img src="images/content/Dial-Santosh.jpg" alt="Dial-Santosh"/></a></article>
+			<article class="slider-feature">
+			<a target="blank" href="http://myvzweb.verizon.com/intranet/appmanager/verizon/myportal?_nfpb=true&_pageLabel=intranetvz_portal_dynamic_contents_page&contentid=INTRANET_097110&portletTitle=VerizonNews" target="blank"><img src="images/content/Vlss.jpg" alt=""/></a></article>
+			<article class="slider-feature">
+			<a target="blank" href="http://myvzweb.verizon.com/intranet/appmanager/verizon/myportal?_nfpb=true&_pageLabel=intranetvz_portal_dynamic_contents_page&contentid=INTRANET_094317&portletTitle=VerizonNews" target="blank"><img src="images/content/intranet_098017.jpg" alt=""/></a></article>
+			<article class="slider-feature">
+			<a target="blank" href="http://myvzweb.verizon.com/intranet/appmanager/verizon/myportal?_nfpb=true&_pageLabel=intranetvz_portal_dynamic_contents_page&contentid=INTRANET_097869&portletTitle=VerizonNews"/><img src="images/content/intranet_097871.jpg" alt=""/></a></article>
+			
+			<article class="slider-feature">
+			<a target="blank" href="http://myvzweb.verizon.com/intranet/appmanager/verizon/myportal?_nfpb=true&_pageLabel=intranetvz_portal_dynamic_contents_page&contentid=INTRANET_097606&portletTitle=VerizonNews" target="blank"><img src="images/content/intranet_098041.jpg" alt="Voice of VDSI"/></a></article>
+			<article class="slider-feature">
+			<a target="blank" href="https://vzweb.verizon.com/intranet/wireline/AboutYou/News/INTRANET_096979" target="blank"><img src="images/content/intranet_061820.jpg" alt="Voice of VDSI"/></a></article>
+			</section>
+			<a href="javascript:;" class="prev" title="Previous Slide"></a><a href="javascript:;" class="next" title="Next Slide"></a>
+			<div class="pageNumber">
+				<span class="current"></span>&nbsp;of&nbsp;<span class="total"></span>
+			</div>
+			</section>
+			</article>
+		</div>
+		</section>
+                <section class="text_container">
+		<div class="grid_8 eq_hgt">
+			<section class="tabset_top">
+			<ul class="gt_labels">
+				<li class="new_st"><a class="active_tab" href="#action_tab"><span class="news_icon1">From MD's Office</span></a></li>
+				<li class="new_st"><a class="" href="#business_tab"><span class="news_icon1">Business Groups</span></a></li>
+				<li class="new_st"><a class="" href="#support_tab"><span class="news_icon1">Corporate Groups</span></a></li>
+			</ul>
+			<div class="share_dd fd_rt">
+				<div class="share_items w180">
+					<h4>Optional</h4>
+					<div class="blue">
+						<div class="inputTxt">
+							<input type="checkbox" name="finance" id="finance" checked="checked"/><label for="finance">Finance</label>
+						</div>
+						<div class="inputTxt">
+							<input type="checkbox" name="consumer" id="consumer"/><label for="consumer">Consumer &amp; Mass Business</label>
+						</div>
+						<div class="inputTxt">
+							<input type="checkbox" name="enterprise" id="enterprise"/><label for="enterprise">Enterprise Solutions</label>
+						</div>
+						<div class="inputTxt">
+							<input type="checkbox" name="wireless" id="wireless" checked="checked"/><label for="wireless">Wireless</label>
+						</div>
+						<div class="inputTxt">
+							<input type="checkbox" name="vztv" id="vztv" checked="checked"/><label for="vztv">VZTV</label>
+						</div>
+						<div class="dotted_divider">
+						</div>
+					</div>
+					<h4>Required</h4>
+					<div>
+						<div class="inputTxt">
+							<input type="checkbox" name="aroundvz" id="aroundvz" checked="checked"/><label for="finance">Around VZ</label>
+						</div>
+						<div class="inputTxt">
+							<input type="checkbox" name="aboutyou" id="aboutyou" checked="checked"/><label for="consumer">About You</label>
+						</div>
+						<div class="inputTxt">
+							<input type="checkbox" name="yourdept" id="yourdept" checked="checked"/><label for="yourdept">Your Department</label>
+						</div>
+						<div class="dotted_divider">
+						</div>
+					</div>
+					<div class="btnbox">
+						<a href="javascript:;" class="button red fl xlarge"><span>Save</span></a>
+						<a href="javascript:;" class="cancel">Cancel</a>
+					</div>
+				</div>
+			</div>
+			<section class="tab_content_main">
+			<section class="gt_content" id="action_tab">
+			<article class="news_box">
+			<figure>
+			<img alt="Placeholder image"  src="images/content/santosh.jpg">
+			</figure>
+			<h2><a href="#">From MD's Office </a></h2>
+			<div class="contentDiv" style="padding-left:167px;width:420px">
+				"Step up and keep up the momentum, in line with our four- point strategy: Develop great talent, Engaged & aligned with business, Driving an efficient global operation Leveraging knowledge and bringing innovation to IT systems." says Santosh.
+			</div>
+			
+			<div>
+			 <br/>Santosh kick started the 1st edition of this year's dial SANTOSH with a quick recap of 2012, emphasizing on the key role IT played and its track record of delivering on business priorities.<br/><br/>
+
+He also recapped key highlights of Verizon's Q4 results while encouraging all employees to watch Lowell's Webcast on company performance every quarter. He pointed out that while we have seen good growth in revenue overall, our expenses too shot up, unanticipated due to the hit we took from super storm Sandy. However, what is important is to be reassured that our strategy is working and showing results.
+<br/><br/>
+Santosh provided an insight into the new Powerful Answers branding campaign which reiterates the organization's transformation from being a connectivity provider to be technology Solutions Company.
+<br/><br/>
+On an optimistic note, Santosh took cognizance that the progress being made in all the four streams of our strategic priorities have been well recognized by the IT organization. "In 2013, step up and keep up the momentum, in line with our four -point strategy :Develop great talent, Engaged& aligned with business, Driving an efficient global operation and Leveraging knowledge and bringing innovation to IT systems," said Santosh.
+<br/><br/>
+Chipping in, Ramesh, General Manager-HR, updated the employee community on the launch of the prestigious Architects Certification Program, partnering with IIT, Chennai. This aspirational program will enroll employees nominated by Delivery Heads based on performance and potential and will comprise of classroom study and project assignments to earn certification from IIT. Ramesh also spoke about - The managerial effectiveness program for all 600 managers in VDS India that will be launched to equip them with skills to be better managers.
+<br/><br/>
+He further added that there will renewed focus on development programs and encouraged employees to utilize these training opportunities to their maximum benefit. 
+			</div>
+			</article>
+			</section>
+			<section class="gt_content" id="business_tab">
+			<article class="news_box">
+			<figure>
+			<img alt="Placeholder image" src="images/content/HR.jpg">
+			</figure>
+			<h2>CORP - <span class="subGrps"><a href="delivery.html">CAO</a><span>&nbsp;|&nbsp;</span><a href="delivery.html">NTEC</a><span>&nbsp;|&nbsp;</span><a href="delivery.html">IT</a></span></h2>
+			<div class="contentDiv">
+				 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntcursus elitaria.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntcursus elitaria.
+			</div>
+			<ul class="list_caret_h1 MoreLinks">
+				<li><a href="delivery.html" title="VIPS">More</a>
+				</li>
+			</ul>
+			</article>
+			<article class="news_box">
+			<figure>
+			<img alt="Placeholder image" src="images/content/Finance.jpg">
+			</figure>
+			<h2><a href="delivery.html">Enterprise Solutions</a></h2>
+			<div class="contentDiv">
+				 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation exercitation veniam, quis nostrud exercitation .
+			</div>
+			<ul class="list_caret_h1 MoreLinks">
+				<li><a href="delivery.html" title="More on Finance">More</a></li>
+			</ul>
+			</article>
+			<article class="news_box">
+			<figure>
+			<img alt="Placeholder image" src="images/content/VIPS.jpg">
+			</figure>
+			<h2><a href="delivery.html">CMB</a></h2>
+			<div class="contentDiv">
+				 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntcursus elitaria.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntcursus elitaria.
+			</div>
+			<ul class="list_caret_h1 MoreLinks">
+				<li><a href="delivery.html" title="VIPS">More</a>
+				</li>
+			</ul>
+			</article>
+			<article class="news_box">
+			<figure>
+			<img alt="Placeholder image" width="210" height="150" src="images/content/realestates.png">
+			</figure>
+			<h2><a href="delivery.html">Wireless</a></h2>
+			<div class="contentDiv">
+				 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntcursus elitaria.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntcursus elitaria.
+			</div>
+			<ul class="list_caret_h1 MoreLinks">
+				<li><a href="delivery.html" title="VIPS">More</a>
+				</li>
+			</ul>
+			</article>
+			</section>
+			<section class="gt_content" id="support_tab">
+			<article class="news_box">
+			<figure>
+			<img alt="Placeholder image" src="images/content/HR.jpg">
+			</figure>
+			<h2><a href="org.html">Human Resource</a></h2>
+			<div class="contentDiv">
+				 Design and deliver HR services and programs aligned with key strategy of business that we support. Achieve and sustain a global competitive advantage by leveraging Verizon"s diverse Workforce and Leadership capabilities.
+			</div>
+			<ul class="list_caret_h1 MoreLinks">
+				<li><a href="org.html" title="VIPS">More</a>
+				</li>
+			</ul>
+			</article>
+			<article class="news_box">
+			<figure>
+			<img alt="Placeholder image" src="images/content/Finance.jpg">
+			</figure>
+			<h2><a href="org.html">Finance</a></h2>
+			<div class="contentDiv">
+				 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation exercitation veniam, quis nostrud exercitation .
+			</div>
+			<ul class="list_caret_h1 MoreLinks">
+				<li><a href="org.html" title="More on Finance">More</a></li>
+			</ul>
+			</article>
+			<article class="news_box">
+			<figure>
+			<img alt="Placeholder image" src="images/content/VIPS.jpg">
+			</figure>
+			<h2><a href="org.html">IT Infrastructure</a></h2>
+			<div class="contentDiv">
+				 To support the Verizon Information Technology development portfolios by provisioning, maintaining and operating Verizon technology across all information systems platforms -- ranging from the palmtop / desktop to the Data Center.
+			</div>
+			<ul class="list_caret_h1 MoreLinks">
+				<li><a href="org.html" title="VIPS">More</a>
+				</li>
+			</ul>
+			</article>
+			<article class="news_box">
+			<figure>
+			<img alt="Placeholder image" width="210" height="150" src="images/content/realestates.png">
+			</figure>
+			<h2><a href="org.html">Global Real Estate</a></h2>
+			<div class="contentDiv">
+				 We share a consensual responsibility to help you get more out of your business and work. We enable a gamut of services that encompass the external processes and systems required to facilitate the business environment.
+			</div>
+			<ul class="list_caret_h1 MoreLinks">
+				<li><a href="org.html" title="VIPS">More</a>
+				</li>
+			</ul>
+			</article>
+			<article class="news_box">
+			<figure>
+			<img alt="Placeholder image" src="images/content/PMO.jpg">
+			</figure>
+			<h2><a href="org.html">Business Operations</a></h2>
+			<div class="contentDiv">
+				 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation exercitation veniam, quis nostrud exercitation .
+			</div>
+			<ul class="list_caret_h1 MoreLinks">
+				<li><a href="org.html" title="Latest News of DR/BCP">More</a></li>
+			</ul>
+			</article>
+			<article class="news_box">
+			<figure>
+			<img alt="Placeholder image" width="210" height="150" src="images/content/sourcingsupp.png">
+			</figure>
+			<h2><a href="org.html">Supply Chain</a></h2>
+			<div class="contentDiv">
+				 Reduce cost via economics of scale,Eliminate duplication of effort,Identify and implement best practices,Optimize vendor relationship,Standardize Systems,Drive efficiency, productivity and quality .
+			</div>
+			<ul class="list_caret_h1 MoreLinks">
+				<li><a href="org.html" title="More on Procurement and Sourcing">More</a>
+				</li>
+			</ul>
+			</article>
+			<article class="news_box">
+			<figure>
+			<img alt="Placeholder image" src="images/content/Legal.jpg">
+			</figure>
+			<h2><a href="org.html">Legal</a></h2>
+			<div class="contentDiv">
+				Our activities are aimed at ensuring VDS India's compliance with all Verizon policies and applicable law, and help foster an employee community that upholds the highest standards of performance excellence and respect.
+			</div>
+			<ul class="list_caret_h1 MoreLinks">
+				<li><a href="org.html" title="VIPS">More</a>
+				</li>
+			</ul>
+			</article>
+			<article class="news_box last_box">
+			<figure>
+			<img alt="Placeholder image" src="images/content/Security.jpg">
+			</figure>
+			<h2><a href="org.html">Security</a></h2>
+			<div class="contentDiv">
+				 All of us have a responsibility to establish and maintain business relationships based on integrity with each other and our business partners. As VDS India employees, we will conduct ourselves with integrity.
+			</div>
+			<ul class="list_caret_h1 MoreLinks">
+				<li><a href="org.html" title="VIPS">More</a>
+				</li>
+			</ul>
+			</article>
+			</section>
+			
+			</section>
+			</section>
+		</div>
+		<!--Main Column-->
+		<!--Sidebar Right START-->
+		<div class="grid_4 sidebar eq_hgt">
+			<section class="tabset2">
+			<ul class="gt_labels_new">
+				<li><a class="active_tab" href="#multi_tab"><span>Gallery</span></a></li>
+				<li><a href="#polls_tab"><span>Quick links</span></a></li>
+			</ul>
+			<section class="tab_content_main">
+			<section class="gt_content_new" id="multi_tab">
+			<div id="rightcolumndiv">
+				<img id="imgSlideShow" src="http://vdsindia.verizon.com/Images/Homepage_Disp_Image/new-folder-054.jpg" border="0" height="190" width="287	">
+				<h1 class="photoGallery" style="float:left;font-size:10px"><span><a style="font-weight: normal;" class="ArchiveMore" href="http://vdsindia.verizon.com/authenticated/Homepages/PhotoGallery/ShowPhotos.aspx" title="View All">View All</a></span></h1>
+				<div class="divider">
+				</div>
+				<h1 class="photoGallery">Press Releases</h1>
+					<ul class="list_bullet_h1 PressRelease">
+					<h2><a class="newItemList" href="delivery.html">Item 1</a></h2>
+						<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntcursus elitaria.</li></ul>
+							<ul class="list_bullet_h1 PressRelease">
+						<h2><a class="newItemList" href="delivery.html">Item 2</a></h2>
+						<li class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntcursus elitaria.</li>
+					</ul>
+					<div class="divider">
+					</div>
+					<h1 class="photoGallery">VoV</h1>
+					<ul class="list_bullet_h1">
+					<img width="287	" height="190" border="0" src="images/content/vov.png" id="imgSlideShow">
+						<li><a target="_blank" class="ArchiveMore" href="http://vdsindia.verizon.com/Authenticated/VDSIESS/">VoV Archive</a></li>
+					</ul>
+					<div class="divider">
+					</div>
+				<h1 class="photoGallery">Frequently Asked Questions </h1>
+			<div class="feedbox">
+					<i></i>
+					<div class="feedtxt">
+						<figure>
+						<img src="images/content/jakcart.gif" alt="Brie Jakcart"/>
+						</figure>
+						<p>
+							<span class="fb"></span><a href="">Brie Jakcart</a><span>says</span>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntcursus elitaria... <span>on May 15, 2012 at 12:38 PM</span>
+						</p>
+					</div>
+				</div>
+				<div class="feedbox">
+					<i></i>
+					<div class="feedtxt">
+						<figure>
+						<img src="images/content/james.gif" alt="Damian James"/>
+						</figure>
+						<p>
+							<span class="twt"></span><a href="">Damian James</a><span>says</span>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntcursus elitaria... <span>on May 15, 2012 at 12:38 PM</span>
+						</p>
+					</div>
+				</div>
+				<div class="feedbox">
+					<i></i>
+					<div class="feedtxt">
+						<figure>
+						<img src="images/content/jakcart.gif" alt="Brie Jakcart"/>
+						</figure>
+						<p>
+							<span class="fb"></span><a href="">Brie Jakcart</a><span>says</span>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntcursus elitaria... <span>on May 15, 2012 at 12:38 PM</span>
+						</p>
+					</div>
+				</div>
+				</div>
+				</section>
+				<section class="gt_content_new" id="polls_tab">
+				<div class="polls_content">
+					<ul class="list_caret_h1" style="margin-left:10px; ">
+						<li><a target="_blank" href="http://pace.verizon.com/" title="PACE Time Reporting">PACE Time Reporting</a></li>
+						<li><a target="_blank" href="http://vdsindia.verizon.com/authenticated/homepages/VDSIInfo/e-Directory/e_Directory.aspx" title="e-Directory">e-Directory</a></li>
+						<li><a target="_blank" href="http://vdsindia.verizon.com/authenticated/Exception/Forms/NewRequest.aspx" title="Security Exception Request">Security Exception Request</a></li>
+						<li><a target="_blank" href="http://vdsindia.verizon.com:8080/" title="Project Management Tool">Project Management Tool</a></li>
+						<li><a target="_blank" href="http://vdsindia.verizon.com/authenticated/Intrasite/" title="RMGPro Job Posting">RMGPro Job Posting</a></li>
+						<li><a target="_blank" href="http://vdsindia.verizon.com/authenticated/Homepages/QMS/" title="QMS">QMS</a></li>
+						<li><a target="_blank" href="http://itc.verizon.com/site/ITCCMS/itc.aspx?stralias=09imperatives" title="Strategic Imperatives">Strategic Imperatives</a></li>
+					</ul>
+					<div class="divider">
+					</div>
+					<h1 class="photoGallery" style="padding-bottom:10px;margin-right:5px;">How do I?<span style="margin-left:5px;color:#999;border:none" class="divider">|</span><a href="http://vdsindia.verizon.com/authenticated/Homepages/VDSIInfo/HowDoI.aspx" title="View All" style="margin-left:5px;font-weight: normal;font-size:10px" target="_blank">View All</a></h1>
+					<ul class="list_caret_h1" style="margin-left:10px; ">
+						<li><a target="_blank" href="http://vdsindia.verizon.com/authenticated/Homepages/VDSIInfo/HowDoI.aspx#1" title="How do I book a cab?">Book a Cab?</a></li>
+						<li><a target="_blank" href="http://vdsindia.verizon.com/authenticated/Homepages/VDSIInfo/HowDoI.aspx#2" title="How do I apply for leave?">Apply for leave? </a></li>
+						<li><a target="_blank" href="http://vdsindia.verizon.com/authenticated/Homepages/VDSIInfo/HowDoI.aspx#3" title="How do I raise a GRE request?">Raise a GRE request</a></li>
+						<li><a target="_blank" href="http://vdsindia.verizon.com/authenticated/Homepages/VDSIInfo/HowDoI.aspx#4" title="How do I raise an exception request?">Raise an Exception request</a></li>
+						<li><a target="_blank" href="http://vdsindia.verizon.com/authenticated/Homepages/VDSIInfo/HowDoI.aspx#5" title="How do I enroll training program?">Enroll Training Programs?</a></li>
+						<li><a target="_blank" href="http://vdsindia.verizon.com/authenticated/Homepages/VDSIInfo/HowDoI.aspx#6" title="How do I refer my friend to VDSI?">Refer my friend to VDSI?</a></li>
+						<li><a target="_blank" href="http://vdsindia.verizon.com/authenticated/Homepages/VDSIInfo/HowDoI.aspx#7" title="How do I book a conference room?">Book a conference room?</a></li>
+						<li><a target="_blank" href="http://vdsindia.verizon.com/authenticated/Homepages/VDSIInfo/HowDoI.aspx#8" title="How do I reserve a book in library?">Reserve a book in library? </a></li>
+						<li><a target="_blank" href="http://vdsindia.verizon.com/authenticated/Homepages/VDSIInfo/HowDoI.aspx#9" title="How do I raise a helpdesk request?">Raise a HelpDesk request</a></li>
+						<li><a target="_blank" href="http://vdsindia.verizon.com/authenticated/Homepages/VDSIInfo/HowDoI.aspx#10" title="How do I report a security incident?">Report a Security incident?</a></li>
+					</ul>
+				</div>
+				
+				
+				<div class="divider"></div>
+			
+			</section>
+				</section>
+			<!--Sidebar Right END-->
+			<!--<div class="clear"></div>-->
+			</section>
+		</div>
+		<!--Content END-->
+            </div>
+            <div title="VZWeb Help" class="VZHelp">
+                <a class="modalpop" href="page_includes/popup.html" title="VDSI Intranet Help"></a>
+            </div>
+            <div title="VZWeb Feedback" class="FeedBack">
+                <img width="13" height="13" src="images/global/sm_tab_icon.gif" title="VZWeb Feedback"
+                    alt="VDSI Intranet">
+                <a title="VDSI Intranet Feedback" class="modalFBpop" href="page_includes/feedback.html">
+                </a>
+            </div>
+            <div id="globalfooter" class="content_container">
+                Copyright &copy;
+
+                <script>                    var year = new Date(); year = year.getYear(); if (year < 1900) year += 1900; document.write(year);</script>
+
+                &nbsp;Verizon &nbsp;<a href="http://vdsindia.verizon.com/authenticated/Homepages/VDSIInfo/VDSISitemap/Sitemap.aspx"
+                    target="_blank" title="Site Map">Site Map</a><span class="ft_div">|</span><a title="Contact VDSI Intranet"
+                        href="mailto:VDSI-Intranet@verizon.com">Contact VDSI Intranet</a><span class="ft_div">|</span><a
+                            title="eWeb" target="_blank" href="http://eweb.verizon.com/">eWeb</a>
+            </div>
+        </div>
+
+        <script src="includes/js/components.js" type="text/javascript"></script>
+
+        <script src="includes/js/plugin.js" type="text/javascript"></script>
+
+        <script>
+            $(".modalpop").modalpopup({ width: "640px", height: "465px" });
+            $(".modalFBpop").modalpopup({ width: "420px", height: "365px" });
+        </script>
+</body>
+</html>

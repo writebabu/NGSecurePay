@@ -1,0 +1,72 @@
+﻿using System;
+using System.Collections.Generic;
+//using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+//using Intranet.Utilities;
+using System.Drawing;
+
+public partial class Feedback : BasePage
+{
+    string strEmpEid = string.Empty;
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        try
+        {
+            strEmpEid = BasePage.CheckSSO();
+            if (!string.IsNullOrEmpty(strEmpEid))
+            {
+                Int64 EmpEid = Convert.ToInt64(strEmpEid);
+                BasePage.SetUserSession(EmpEid);
+
+                if (UserSession.VZID == null || UserSession.VZID == string.Empty)
+                {
+                    txtName.Enabled = true;
+                    txtEmail.Enabled = true;
+                }
+                else
+                {
+                    txtName.Text = UserSession.EmpName;
+                    txtEmail.Text = UserSession.Email;
+                }
+            }
+
+
+        }
+        catch (Exception ex)
+        {
+            if (!ex.Message.ToString().Trim().Equals("Thread was being aborted."))
+            {
+                Util.WriteToLog("Feedback_Page_Load", ex.Message.ToString(), UserSession.EmpID);
+                Response.Redirect(FindLink.ToNotAuthorised("Error"), true);
+            }
+        }
+    }
+
+    protected void btnSubmit_OnClick(object sender, EventArgs e)
+    {
+        try
+        {
+            if (txtMessage.Text.Trim() == string.Empty)
+            {
+                lblMessage.Text = "Pleae enter message!";
+                lblMessage.ForeColor = Color.Red;
+            }
+            else
+            {
+                lblMessage.Text = "Thanks for your feedback!";
+                lblMessage.ForeColor = Color.Green;
+            }
+        }
+        catch (Exception ex)
+        {
+            if (!ex.Message.ToString().Trim().Equals("Thread was being aborted."))
+            {
+                Util.WriteToLog("Feedback_btnSubmit_OnClick", ex.Message.ToString(), UserSession.EmpID);
+                Response.Redirect(FindLink.ToNotAuthorised("Error"), true);
+            }
+        }
+    }
+}

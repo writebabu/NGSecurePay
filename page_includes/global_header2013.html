@@ -1,0 +1,138 @@
+<section class="branding">
+<div class="globalNavContainer pr">
+  <article class="logo"><img alt="Verizon" title="Verizon" src="images/global/logos/logo_verizon_sec.gif"></article>
+  <!--<a alt="Organization Chart" href="http://orgchart.verizon.com/ldapOrgChart/orgChartMain.jsp" class="orgChart orgSearch">Org Chart</a>
+   <h3 class="aySearch">Search</h3>-->
+ <div class="cnt_box">
+  	<!--<a href="javscript:;" title="Intranet" class="content_img">Intranet</a><a href="javscript:;" title="People" class="people_img">People</a>-->
+  </div>
+  <div class="searchWrapper" id="Intranet_searchBox">
+    <!--<div class="search">
+	    <label class="val_txt">Search Intranet</label>
+      <input id="SearchEverything" type="text"  class="text" name="SearchEverything">
+      </div>
+      <div class="top_btn fl">
+      <a href="#" onclick="javascript:fnSearch1();"  class="button" alt="Search" title="Search"> <span class="icon"></span></a>
+      </div>  -->  
+    <!-- SEARCH RESULTS -->
+		<!--<div class="searchOverlay" id="searchOverlayTop">
+			<div class="results">
+				<div class="res_list">
+					<div class="r"><strong>pay</strong> : Base Pay</div>
+					<div class="r"><strong>pay</strong> areas : Geographic Pay Areas</div>
+					<div class="r"><strong>pay</strong> increases : Pay Increases</div>
+					<div class="r"><strong>pay</strong>ment : Loans</div>
+					<div class="r"><strong>pay</strong>roll : Payroll Services</div>
+					<div class="r"><strong>pay</strong>roll control group : Payroll Control Group and Production Support</div>
+					<div class="r"><strong>pay</strong>roll objectives : Payroll Objectives</div>
+					<div class="r"><strong>pay</strong>roll operations : Payroll Operations</div>
+					<div class="r"><strong>pay</strong>roll systems : Payroll Systems</div>
+				</div>
+			</div>
+		</div>-->
+	</div>
+    <div class="searchWrapper" id="People_searchBox">
+		<!--<div class="peoplesearch search">
+    	<span class="psr1">
+			<label class="val_txt">Last Name</label>
+			<input type="text" class="text" name="lname" id="lname" value="Last Name">
+      </span>
+      <span class="psr2">
+			<label class="val_txt2">First Name</label>
+			<input type="text" class="text" name="fname" id="fname" value="First Name">
+      </span>
+			<a href="#" onclick="javascript:fnSearch2();" class="button" alt="Search" title="Search"> <span class="icon"></span></a>
+		</div>-->
+      
+	</div>
+  
+  
+ <div class="global_dotted_border"></div>
+  <!--Main Menu-->
+  <ul class="globalnav">
+    <!--Home-->
+    <li class="active"><a href="Index.aspx"><span>Home</span></a></li>
+    <!--Who We Are-->
+    <li> 
+            <a href="VirtualCard.aspx" class="drop navlink">Virtual Card</a>
+        <span class="selected_link">&nbsp;</span>
+        
+
+
+    </li>
+    <!--About You-->
+	<li><a href="Products.aspx" class="drop navlink" target="_blank">Products</a>
+        <span class="selected_link">&nbsp;</span>
+</li>
+    <li> <a href="FinancialServices.aspx" class="drop navlink">Financial Services</a><span class="selected_link">&nbsp;</span>
+      
+    </li>
+  </ul>
+  <!-- END MENU -->
+  </div>
+</section>
+<nav class="sec_nav">
+    <article class="header_links"> 
+        <!--<section class="stock"> <span><strong>VZ</strong>&nbsp;42.71</span><span class="name stock_up">+0.31</span><span class="plus_ico">&nbsp;</span> </section>-->
+    </article>
+</nav>
+
+<script type="text/javascript">
+    $('.peoplesearch input').live('focus click', function() {
+        obj = $(this);
+        $(this).prevAll('label').hide();
+        obj.addClass('focused');
+    });
+    $('.peoplesearch label').live('click', function() {
+        $(this).nextAll('input.text').focus();
+        $(this).hide(); //- hide label
+    });
+    $('.peoplesearch .text').live('blur', function() {
+        input = $(this);
+        if (input.val() == '') {
+            $(this).prevAll('label').show(); //- show label
+        }
+        input.removeClass('focused');
+    });
+
+
+    $(".cnt_box a:first").addClass("select_txt");
+    $(".searchWrapper").hide();
+    $(".searchWrapper:first").show();
+    $(".cnt_box a").bind("click", function() {
+        $('.search input').val('');
+        $('.search label').show();
+        $('.searchWrapper #searchOverlayTop').hide();
+        var searchTitle = $(this).attr("title");
+        $(".select_txt").removeClass("select_txt");
+        $(this).addClass("select_txt");
+        $(".searchWrapper").hide();
+        $("#" + searchTitle + "_searchBox").show();
+        return false;
+    });
+    /*__________________________________________________________________
+
+    SEARCH RESULTS CODE
+    __________________________________________________________________*/
+
+    var lngh;
+    $('#Intranet_searchBox .search input').keyup(function() {
+        if ($(this).val().length > 1) {
+            $('#Intranet_searchBox #searchOverlayTop').slideDown(100);
+        } else {
+            $('#Intranet_searchBox #searchOverlayTop').slideUp(50);
+        }
+        $('body').bind("click", clearResults);
+    });
+
+    function clearResults(event) {
+        if (!$(event.target).closest('.searchWrapper #searchOverlayTop').length && !$(event.target).closest('.searchWrapper .search').length) {
+            $('.searchWrapper #searchOverlayTop').slideUp(10);
+            $('body').unbind();
+        }
+    }
+
+	
+	
+</script>
+

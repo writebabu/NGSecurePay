@@ -1,0 +1,120 @@
+﻿using System;
+using System.Data;
+using System.Configuration;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Web.UI.HtmlControls;
+using System.Data.SqlClient;
+using Intranet.Utilities;
+using System.Collections.Generic;
+using IntranetPL;
+
+namespace IntranetDL
+{
+    public class DL_Employee
+    {
+        private string strConnection = ConfigurationManager.ConnectionStrings["IntranetDBConnection"].ConnectionString;
+
+        public DL_Employee()
+        {
+            //
+            // TODO: Add constructor logic here
+            //
+        }
+
+        public PL_Employee GetLoggedInEmpDetails(Int64 EmpEID)
+        {
+            PL_Employee _temp = new PL_Employee();
+            using (SqlConnection myConnection = new SqlConnection(strConnection))
+            {
+                using (SqlCommand myCommand = new SqlCommand("USP_LoggedInEmployee", myConnection))
+                {
+                    myCommand.CommandType = CommandType.StoredProcedure;
+                    if (EmpEID != 0)
+                        myCommand.Parameters.AddWithValue("@EmpEid", EmpEID);
+
+                    myConnection.Open();
+                    using (SqlDataReader myReader = myCommand.ExecuteReader())
+                    {
+                        if (myReader.HasRows)
+                        {
+                            if (myReader.Read())
+                            {
+                                _temp = FillDataRecord(myReader);
+                            }
+                            myReader.Close();
+                        }
+                        myReader.Close();
+                    }
+                }
+                myConnection.Close();
+            }
+            return _temp;
+        }
+
+        public int SaveErrorMessage(string errorMessage)
+        {
+            int result = 0;
+            using (SqlConnection myConnection = new SqlConnection(strConnection))
+            {
+                using (SqlCommand myCommand = new SqlCommand("USP_InsertMail", myConnection))
+                {
+                    myCommand.CommandType = CommandType.StoredProcedure;
+
+                    if (!string.IsNullOrEmpty(errorMessage))
+                        myCommand.Parameters.AddWithValue("@ErrorMessage", errorMessage);
+
+                    myConnection.Open();
+                    result = myCommand.ExecuteNonQuery();
+                }
+                myConnection.Close();
+            }
+            return result;
+        }
+
+        private PL_Employee FillDataRecord(IDataRecord myDataRecord)
+        {
+            PL_Employee _emp = new PL_Employee();
+
+            if (!myDataRecord.IsDBNull(myDataRecord.GetOrdinal("EmpEid")))
+            {
+                _emp.EmpEid = myDataRecord.GetInt64(myDataRecord.GetOrdinal("EmpEid"));
+            }
+
+            if (!myDataRecord.IsDBNull(myDataRecord.GetOrdinal("EmpId")))
+            {
+                _emp.EmpId = myDataRecord.GetInt32(myDataRecord.GetOrdinal("EmpId"));
+            }
+
+            if (!myDataRecord.IsDBNull(myDataRecord.GetOrdinal("VZID")))
+            {
+                _emp.VZID = myDataRecord.GetString(myDataRecord.GetOrdinal("VZID"));
+            }
+
+            if (!myDataRecord.IsDBNull(myDataRecord.GetOrdinal("EmpFirstName")))
+            {
+                _emp.EmpFirstName = myDataRecord.GetString(myDataRecord.GetOrdinal("EmpFirstName"));
+            }
+
+            if (!myDataRecord.IsDBNull(myDataRecord.GetOrdinal("EmpName")))
+            {
+                _emp.EmpName = myDataRecord.GetString(myDataRecord.GetOrdinal("EmpName"));
+            }
+
+            if (!myDataRecord.IsDBNull(myDataRecord.GetOrdinal("Email")))
+            {
+                _emp.Email = myDataRecord.GetString(myDataRecord.GetOrdinal("Email"));
+            }
+
+            if (!myDataRecord.IsDBNull(myDataRecord.GetOrdinal("Gender")))
+            {
+                _emp.Gender = myDataRecord.GetString(myDataRecord.GetOrdinal("Gender"));
+            }                    
+
+            return _emp;
+        }
+    }
+}

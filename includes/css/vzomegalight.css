@@ -1,0 +1,977 @@
+/*VZOmega styles*/
+
+
+/*custom fonts*/
+@font-face { 
+	font-family: 'VerizonApexBook'; 
+	src: 
+		url('../fonts/verizonapex-book.eot'); 
+	src: 
+		url('../fonts/verizonapex-book.eot?#iefix') format('embedded-opentype'),  
+		url('../fonts/verizonapex-book.ttf') format('truetype'),
+		url('../fonts/verizonapex-book.woff') format('woff'),  
+		url('../fonts/verizonapex-book.svg#VerizonApexBook') format('svg'); 
+	font-weight: normal; 
+	font-style: normal;
+}
+@font-face { 
+	font-family: 'VerizonApexMedium'; 
+	src: 
+		url('../fonts/verizonapex-medium.eot'); 
+	src: 
+		url('../fonts/verizonapex-medium.eot?#iefix') format('embedded-opentype'), 
+		url('../fonts/verizonapex-bold.ttf') format('truetype'),
+		url('../fonts/verizonapex-medium.woff') format('woff'),  
+		url('../fonts/verizonapex-medium.svg#VerizonApexMedium') format('svg'); 
+	font-weight: normal; font-style: normal; }
+@font-face { 
+	font-family: 'VerizonApexBold'; 
+	src: 
+		url('../fonts/verizonapex-bold.eot'); 
+	src: 
+		url('../fonts/verizonapex-bold.eot?#iefix') format('embedded-opentype'), 
+		url('../fonts/verizonapex-bold.ttf') format('truetype'),
+		url('../fonts/verizonapex-bold.woff') format('woff'), 
+		url('../fonts/verizonapex-bold.svg#VerizonApexBold') format('svg');
+	font-weight: normal; 
+	font-style: normal;
+}
+/*buttons*/
+.vzbutton{
+	display: inline-block;
+	text-decoration: none;
+	outline: none;
+	cursor: pointer;
+	font: bold 12px/1em HelveticaNeue, Arial, sans-serif;
+	padding: 8px 11px;
+	color: #555;
+	text-shadow: 0 1px 0 #fff;
+	
+	background: #f5f5f5;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#f0f0f0));
+	background: -moz-linear-gradient(top, #f9f9f9, #f0f0f0);
+	
+	border: 1px solid #dedede;
+	border-color: #dedede #d8d8d8 #d3d3d3;
+	
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	
+	-webkit-box-shadow: 0 1px 2px #eaeaea, inset 0 1px 0 #fbfbfb;
+	-moz-box-shadow: 0 1px 2px #eaeaea, inset 0 1px 0 #fbfbfb;
+	box-shadow: 0 1px 2px #eaeaea, inset 0 1px 0 #fbfbfb;
+}
+
+.vzbutton:hover, .vzbutton:focus{
+	color: #555;
+	background: #efefef;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#e9e9e9));
+	background: -moz-linear-gradient(top, #f9f9f9, #e9e9e9);
+	border-color: #ccc;
+	-webkit-box-shadow: 0 2px 1px #e0e0e0, inset 0 1px 0 #fbfbfb;
+	-moz-box-shadow: 0 2px 1px #e0e0e0, inset 0 1px 0 #fbfbfb;
+	box-shadow: 0 1px 2px #e0e0e0, inset 0 1px 0 #fbfbfb;
+	text-decoration:none;
+}
+
+.vzbutton:active{
+	position: relative;
+	top: 1px;
+	
+	color: #555;
+	background: #efefef;
+	background: -webkit-gradient(linear, left top, left bottom, from(#eaeaea), to(#f4f4f4));
+	background: -moz-linear-gradient(top, #eaeaea, #f4f4f4);
+	border-color: #c6c6c6;
+	-webkit-box-shadow: 0 1px 0 #fff, inset 0 0 5px #ddd;
+	-moz-box-shadow: 0 1px 0 #fff, inset 0 0 5px #ddd;
+	box-shadow: 0 1px 0 #fff, inset 0 0 5px #ddd;
+}
+input.vzbutton, button.vzbutton{
+	*width: auto; /* IE7 Fix */
+	*overflow: visible; /* IE7 Fix */
+}
+.vzbutton img{
+	border: none;
+	vertical-align: bottom;
+}
+.vzbuttonWrapper{
+	display:block;
+	margin:0 0 20px;
+	padding:0;
+}
+/* ----- ---- --- -- -  Small buttons - -- --- ---- ----- */
+.vzbutton.small{
+	padding: 5px 11px;
+	font-size: 11px;
+	font-weight: normal;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+/* ----- ---- --- -- -  Large buttons - -- --- ---- ----- */
+.vzbutton.large{
+	padding: 12px 15px;
+	font-size: 20px;
+	font-weight: normal;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+/*Blue*/
+.vzbutton.blue{
+	background: #377ad0;
+	background: -webkit-gradient(linear, left top, left bottom, from(#52a8e8), to(#377ad0));
+	background: -moz-linear-gradient(top, #52a8e8, #377ad0);
+	border-color: #4081af #2e69a3 #20559a;
+	color: #fff;
+	text-shadow: 0 1px 1px #4081af;
+	-webkit-box-shadow: 0 1px 2px #d6d6d6, inset 0 1px 1px #72b9eb;
+	-moz-box-shadow: 0 1px 2px #d6d6d6, inset 0 1px 1px #72b9eb;
+	box-shadow: 0 1px 2px #d6d6d6, inset 0 1px 1px #72b9eb;
+}
+.vzbutton.blue:hover, .vzbutton.blue:focus{
+	background: #206bcb;
+	background: -webkit-gradient(linear, left top, left bottom, from(#3e9ee5), to(#206bcb));
+	background: -moz-linear-gradient(top, #3e9ee5, #206bcb);
+	border-color: #2a73a6 #165899 #07428f;
+	-webkit-box-shadow: 0 1px 0 0 #fff, inset 0 1px 0 0 #62b1e9;
+	-moz-box-shadow: 0 1px 0 0 #fff, inset 0 1px 0 0 #62b1e9;
+	box-shadow: 0 1px 0 0 #fff, inset 0 1px 0 0 #62b1e9;
+}
+.vzbutton.blue:active{
+	background: #3282d3;
+	border-color: #154c8c #154c8c #0e408e;
+	text-shadow: 0 -1px 1px #1d62ab;
+	-webkit-box-shadow: 0 1px 0 0 #fff, inset 0 0 6px 3px #1657b5;
+	-moz-box-shadow: 0 1px 0 0 #fff, inset 0 0 6px 3px #1657b5;
+	box-shadow: 0 1px 0 0 #fff, inset 0 0 6px 3px #1657b5;
+}
+/*Green*/
+.vzbutton.green{
+	background: #7fbf4d;
+	background: -webkit-gradient(linear, left top, left bottom, from(#7fbf4d), to(#63a62f));
+	background: -moz-linear-gradient(top, #7fbf4d, #63a62f);
+	border-color: #63a62f;
+	color: #fff;
+	text-shadow: 0 1px 0 #53961e;
+	-webkit-box-shadow: 0 1px 2px #d6d6d6, inset 0 1px 0 #96d865;
+	-moz-box-shadow: 0 1px 2px #d6d6d6, inset 0 1px 0 #96d865;
+	box-shadow: 0 1px 2px #d6d6d6, inset 0 1px 0 #96d865;    
+}
+.vzbutton.green:hover, .vzbutton.green:focus{
+	background: #76b347;
+	background: -webkit-gradient(linear, left top, left bottom, from(#86c755), to(#5ea12a));
+	background: -moz-linear-gradient(top, #86c755, #5ea12a);
+	border-color: #53961e;
+	-webkit-box-shadow: 0 0 1px #d6d6d6, inset 0 1px 0 #96d865;
+	-moz-box-shadow: 0 0 1px #d6d6d6, inset 0 1px 0 #96d865;
+	box-shadow: 0 0 1px #d6d6d6, inset 0 1px 0 #96d865;    
+}
+.vzbutton.green:active{
+	background: #7fbf4d;
+	border-color: #53961e;
+	-webkit-box-shadow: 0 1px 0 #fff, inset 0 0 5px #53961e;
+	-moz-box-shadow: 0 1px 0 #fff, inset 0 0 5px #53961e;
+	box-shadow: 0 1px 0 #fff, inset 0 0 5px #53961e;
+}
+/*Red*/
+.vzbutton.red{
+	background: #890000;
+	background: -webkit-gradient(linear, left top, left bottom, from(#B00000), to(#890000));
+	background: -moz-linear-gradient(top, #B00000, #890000);
+	border-color: #d1371c #d1371c #9f220d;
+	color: #fff;
+	text-shadow: 0 1px 1px #961a07;
+	-webkit-box-shadow: 0 1px 2px #d6d6d6, inset 0 1px 0 #ff9573;
+	-moz-box-shadow: 0 1px 2px #d6d6d6, inset 0 1px 0 #ff9573;
+	box-shadow: 0 1px 2px #d6d6d6, inset 0 1px 0 #ff9573;    
+}
+.vzbutton.red:hover, .vzbutton.red:focus{
+	background: #B00000;
+	background: -webkit-gradient(linear, left top, left bottom, from(#D00000), to(#890000));
+	background: -moz-linear-gradient(top, #D00000, #890000);
+	border-color: #890000;
+	-webkit-box-shadow: 0 0 1px #d6d6d6, inset 0 1px 0 #890000;
+	-moz-box-shadow: 0 0 1px #d6d6d6, inset 0 1px 0 #890000;
+	box-shadow: 0 0 1px #d6d6d6, inset 0 1px 0 #C00000;    
+}
+.vzbutton.red:active{
+	background: #e6433d;
+	border-color: #961a07;
+	-webkit-box-shadow: 0 1px 0 #fff, inset 0 0 5px #961a07;
+	-moz-box-shadow: 0 1px 0 #fff, inset 0 0 5px #961a07;
+	box-shadow: 0 1px 0 #fff, inset 0 0 5px #961a07;
+}
+
+
+
+/* ----- ---- --- -- -  Orange - -- --- ---- ----- */
+
+.vzbutton.orange{
+	background: #ee8f1f;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f5b026), to(#f48423));
+	background: -moz-linear-gradient(top, #f5b026, #f48423);
+	border-color: #e6791c #e6791c #d86f15;
+	color: #fff;
+	text-shadow: 0 1px 1px #b85300;
+	-webkit-box-shadow: 0 1px 2px #d7e9a4, inset 0 1px 0 #f8d898;
+	-moz-box-shadow: 0 1px 2px #d7e9a4, inset 0 1px 0 #f8d898;
+	box-shadow: 0 1px 2px #d7e9a4, inset 0 1px 0 #f8d898;    
+}
+.vzbutton.orange:hover, .vzbutton.orange:focus{
+	background: #e38512;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffbb33), to(#eb7b1a));
+	background: -moz-linear-gradient(top, #ffbb33, #eb7b1a);
+	border-color: #d0680c;
+	-webkit-box-shadow: 0 0 1px #d6d6d6, inset 0 1px 0 #ffdf9e;
+	-moz-box-shadow: 0 0 1px #d6d6d6, inset 0 1px 0 #ffdf9e;
+	box-shadow: 0 0 1px #d6d6d6, inset 0 1px 0 #ffdf9e;    
+}
+.vzbutton.orange:active{
+	background: #ee8f1f;
+	border-color: #d0680c;
+	-webkit-box-shadow: 0 1px 0 #fff, inset 0 0 5px #d0680c;
+	-moz-box-shadow: 0 1px 0 #fff, inset 0 0 5px #d0680c;
+	box-shadow: 0 1px 0 #fff, inset 0 0 5px #d0680c;
+}
+
+
+
+/* ----- ---- --- -- -  Yellow - -- --- ---- ----- */
+
+.vzbutton.yellow{
+	background: #f9e327;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fceb4c), to(#ebd611));
+	background: -moz-linear-gradient(top, #fceb4c, #ebd611);
+	border-color: #dcc700 #dcc700 #c2b00b;
+	color: #444;
+	text-shadow: 0 1px 1px #ffff98;
+	-webkit-box-shadow: 0 1px 2px #d7e9a4, inset 0 1px 0 #fee395;
+	-moz-box-shadow: 0 1px 2px #d7e9a4, inset 0 1px 0 #fee395;
+	box-shadow: 0 1px 2px #d7e9a4, inset 0 1px 0 #fee395;    
+}
+.vzbutton.yellow:hover, .vzbutton.yellow:focus{
+	background: #ebd611;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fffa58), to(#e1cd00));
+	background: -moz-linear-gradient(top, #fffa58, #e1cd00);
+	border-color: #cebb10;
+	-webkit-box-shadow: 0 0 1px #d6d6d6, inset 0 1px 0 #fee395;
+	-moz-box-shadow: 0 0 1px #d6d6d6, inset 0 1px 0 #fee395;
+	box-shadow: 0 0 1px #d6d6d6, inset 0 1px 0 #fee395;    
+}
+.vzbutton.yellow:active{
+	background: #f9e327;
+	border-color: #cebb10;
+	-webkit-box-shadow: 0 1px 0 #fff, inset 0 0 5px #cebb10;
+	-moz-box-shadow: 0 1px 0 #fff, inset 0 0 5px #cebb10;
+	box-shadow: 0 1px 0 #fff, inset 0 0 5px #cebb10;
+}
+
+/* ----- ---- --- -- -  Grey - -- --- ---- ----- */
+
+.vzbutton.grey{
+	background: #969696;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ababab), to(#818181));
+	background: -moz-linear-gradient(top, #ababab, #818181);
+	border-color: #a0a0a0 #7c7c7c #717171;
+	color: #fff;
+	text-shadow: 0 1px 1px #444;
+	-webkit-box-shadow: 0 1px 2px #eaeaea, inset 0 1px 0 #bebebe;
+	-moz-box-shadow: 0 1px 2px #eaeaea, inset 0 1px 0 #bebebe;
+	box-shadow: 0 1px 2px #eaeaea, inset 0 1px 0 #bebebe;    
+}
+.vzbutton.grey:hover, .vzbutton.grey:focus{
+	background: #868686;
+	background: -webkit-gradient(linear, left top, left bottom, from(#b0b0b0), to(#6f6f6f));
+	background: -moz-linear-gradient(top, #b0b0b0, #6f6f6f);
+	border-color: #666 #666 #606060;
+	-webkit-box-shadow: 0 0 1px #d6d6d6, inset 0 1px 0 #bebebe;
+	-moz-box-shadow: 0 0 1px #d6d6d6, inset 0 1px 0 #bebebe;
+	box-shadow: 0 0 1px #d6d6d6, inset 0 1px 0 #bebebe;    
+}
+.vzbutton.grey:active{
+	background: #909090;
+	border-color: #606060;
+	-webkit-box-shadow: 0 1px 0 #fff, inset 0 0 5px #606060;
+	-moz-box-shadow: 0 1px 0 #fff, inset 0 0 5px #606060;
+	box-shadow: 0 1px 0 #fff, inset 0 0 5px #606060;
+}
+/*Black*/
+.vzbutton.black{
+	background: #525252;
+	background: -webkit-gradient(linear, left top, left bottom, from(#5e5e5e), to(#434343));
+	background: -moz-linear-gradient(top, #5e5e5e, #434343);
+	border-color: #4c4c4c #313131 #1f1f1f;
+	color: #fff;
+	text-shadow: 0 1px 1px #2e2e2e;
+	-webkit-box-shadow: 0 1px 2px #eaeaea, inset 0 1px 0 #868686;
+	-moz-box-shadow: 0 1px 2px #eaeaea, inset 0 1px 0 #868686;
+	box-shadow: 0 1px 2px #eaeaea, inset 0 1px 0 #868686;    
+}
+.vzbutton.black:hover, .vzbutton.black:focus{
+	background: #4b4b4b;
+	background: -webkit-gradient(linear, left top, left bottom, from(#686868), to(#363636));
+	background: -moz-linear-gradient(top, #686868, #363636);
+	border-color: #313131;
+	-webkit-box-shadow: 0 0 1px #d6d6d6, inset 0 1px 0 #868686;
+	-moz-box-shadow: 0 0 1px #d6d6d6, inset 0 1px 0 #868686;
+	box-shadow: 0 0 1px #d6d6d6, inset 0 1px 0 #868686;    
+}
+.vzbutton.black:active{
+	background: #525252;
+	border-color: #313131;
+	-webkit-box-shadow: 0 1px 0 #fff, inset 0 0 5px #313131;
+	-moz-box-shadow: 0 1px 0 #fff, inset 0 0 5px #313131;
+	box-shadow: 0 1px 0 #fff, inset 0 0 5px #313131;
+}
+
+/*text*/
+.vzbutton.text{
+	background: none;
+	border: none;
+	color: #06C;
+	margin-right:0;
+	text-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+.vzbutton.text:hover, .vzbutton.grey:focus{
+	background: none;
+	border-color: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	text-decoration:underline;
+}
+.vzbutton.text:active{
+	background: none;
+	border-color: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+/*end buttons*/
+
+body {
+  background: #F2F2F2;
+  color: #333;
+	font-family:Arial, Helvetica, sans-serif;
+  height: auto;
+}
+
+a {
+  color: #06C;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+p {
+  padding: 0;
+}
+
+
+
+/*960.css overrides*/
+.container_12,
+.container_16,
+.container_24 {
+  background-color: #FFF;
+	z-index:1;
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);	
+	/* For IE 8,7 */
+	border:1px solid #DDD\9;
+	border-top:none\9;
+}
+
+/*text.css overrides*/
+p, dl, hr, h1, h2, h3, h4, h5, h6, ol, ul, pre, table, address, fieldset, figure {
+    margin:10px 0;
+}
+p{
+	color:#555;
+	font-size:12px;
+	line-height:21px;
+}
+h1 {
+	color:#B00000;
+	font-size:25px;
+}
+
+h2 {
+	color:#B00000;	
+	font-size:18px;
+}
+h3 {
+  font-size:16px;
+}
+h4 {
+  font-size:14px;
+}
+h5 {
+  font-size:12px;
+}
+h6 {
+  font-size:11px;
+}
+/*custom headings*/
+h1.custom,
+h2.custom,
+h3.custom,
+h4.custom,
+h5.custom,
+h6.custom{
+	font-family:'VerizonApexBook', Arial, sans-serif;
+	font-weight:normal;
+}
+h1.pagetitle{
+	margin:0;
+}
+h1.custom{
+	font-size:36px;
+	text-transform:uppercase;
+}
+h2.custom{
+	font-size:28px;
+	text-transform:uppercase;	
+}
+h3.custom{
+	font-size:25px;
+}
+h4.custom{
+	font-family:'VerizonApexMedium', Arial, sans-serif;	
+	font-size:21px;
+	text-transform:uppercase;	
+}
+h5.custom{
+	font-size:18px;
+}
+h6.custom{
+	font-size:16px;
+}
+
+/*custom styles*/
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none;}
+
+/* .article*/
+.article blockquote {font: italic 400 1.4em 'VerizonApexBook', san-serif; display: block; clear: both; margin: 20px 0; padding: 20px 20px 20px 60px; background: #f8f8f8 url('../images/blockquote.gif') no-repeat 20px 25px; font-style: italic; color: #888;}
+.article blockquote p {padding: 0;}
+.article ul {margin: 0 0 20px 25px; list-style: circle outside;}
+.article ol {margin: 0 0 20px 25px; list-style: decimal outside;}
+.article li {margin: 3px 0; line-height: 1.8em;}
+
+figure{
+	float:left;
+	margin:4px 20px 0 0;
+}
+figcaption{
+	color:#888;
+	font-style:italic;
+	font-size:11px;
+	margin:0;
+	padding:10px 0;
+}
+figure.custom{
+	position:relative;
+	margin:0 20px 20px 0;
+	overflow:hidden;
+}
+figure.custom figcaption{
+	background:#000;
+	color:#FFF;
+	padding:10px;
+	position:absolute;
+	left:0;
+	bottom:0;
+	width:100%;
+	opacity:0.7;
+	filter: alpha(opacity=70);
+	*margin-right:1px;
+}
+
+blockquote{
+	border-left:5px solid #B00000;
+	margin:0;
+	padding:0 0 0 20px;
+}
+blockquote q{
+	color:#555;
+	font-family:'VerizonApexBook', Arial, sans-serif;
+	font-weight:normal;
+	font-size:16px;
+	text-transform:uppercase;
+}
+blockquote.typeB{
+	border-left:none;
+	margin:0;
+	padding:20px 0;
+	text-align:center;
+}
+blockquote.typeB q{
+	color:#B00000;
+	display:inline-block;
+	font-size:20px;
+	width:80%;
+}
+
+
+
+
+
+
+/*styles for paragraphs*/
+.article_intro{
+	color:#555;
+	font-family:'VerizonApexBook', Arial, sans-serif;
+	font-size:20px;
+	font-weight:normal;
+	line-height:28px;
+}
+
+.breadcrumb{
+	color:#999;
+	font-size:11px;
+	line-height:12px;
+	margin:0;
+	padding:0 0 10px;
+}
+
+
+
+
+.branding{
+	background:#FFF;
+	margin:0 auto;
+	width:960px;
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);	
+	 /*IE7 Hack*/
+	border:1px solid #DDD\9;
+	border-top:none\9;
+	border-bottom:none\9;
+}
+.branding img.logo{
+	margin:10px;
+}
+
+/*global navigation*/
+.branding nav{
+	border-top:1px solid #DDD;
+	font-family:'VerizonApexBook', Arial, sans-serif;
+	font-size:17px;
+}
+.branding nav ul{
+	display:inline-block;
+	*display:inline;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+.branding nav ul li{
+	display:inline-block;
+	*display:inline; /*IE7 Hack*/
+	font-size:17px;
+	padding:3px 10px;
+	margin-left:0;
+}
+.branding nav ul li:hover{
+}
+.branding nav ul li a{
+	color:#555;
+	text-decoration:none;
+}
+.branding nav ul li a:hover{
+	color:#B00000;
+}
+
+
+.redribbon{
+	background:#890000;
+	height:30px;
+}
+
+
+/*section dividers*/
+/*section{
+	border-bottom:1px solid #DDD;
+}
+article{
+
+}
+article:last-child{
+	border:none;
+}*/
+
+fieldset {
+	display: block;
+	-webkit-margin-start: 2px;
+	-webkit-margin-end: 2px;
+	-webkit-padding-before: 0px;
+	-webkit-padding-start: 0px;
+	-webkit-padding-end: 10px;
+	-webkit-padding-after: 10px;
+	border: 1px dotted #CCC;
+	border-image: initial;
+	padding:10px;
+	float:left;
+}
+fieldset legend{
+	background:#FFF;
+	color:#999;
+	font-size:11px;
+	letter-spacing:5px;
+	padding:0 5px;
+	text-transform:uppercase;	
+}
+fieldset label{
+	color:#333;
+	display:block;
+	font-size:12px;
+	font-weight:bold;
+	margin:0;
+	padding:0;
+}
+fieldset input{
+	margin-bottom:10px;
+}
+fieldset.checkbox {
+	background:#F2F2F2;
+	border-bottom: 1px dotted #CCC;
+	border-top: 1px dotted #CCC;
+	display: block;	
+	padding:10px;
+}
+fieldset legend{
+	background:#FFF;
+	color:#999;
+	font-size:11px;
+	letter-spacing:5px;
+	padding:0 5px;
+	text-transform:uppercase;	
+}
+fieldset label{
+	color:#333;
+	display:block;
+	font-size:12px;
+	font-weight:bold;
+	margin:0;
+	padding:0;
+}
+fieldset input{
+	margin-bottom:10px;
+}
+
+
+
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+textarea, 
+select { 
+	background: rgb(255,255,255); /* Old browsers */ /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: -moz-linear-gradient(top, rgba(230,231,232,1) 0%, rgba(242,242,242,1) 12%, rgba(255,255,255,1) 57%, rgba(255,255,255,1) 100%); /* FF3.6+ */ 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(230,231,232,1)), color-stop(12%, rgba(242,242,242,1)), color-stop(57%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1))); /* Chrome,Safari4+ */ 
+	background: -webkit-linear-gradient(top, rgba(230,231,232,1) 0%, rgba(242,242,242,1) 12%, rgba(255,255,255,1) 57%, rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */ 
+	background: -o-linear-gradient(top, rgba(230,231,232,1) 0%, rgba(242,242,242,1) 12%, rgba(255,255,255,1) 57%, rgba(255,255,255,1) 100%); /* Opera 11.10+ */ 
+	background: -ms-linear-gradient(top, rgba(230,231,232,1) 0%, rgba(242,242,242,1) 12%, rgba(255,255,255,1) 57%, rgba(255,255,255,1) 100%); /* IE10+ */ 
+	background: linear-gradient(top, rgba(230,231,232,1) 0%, rgba(242,242,242,1) 12%, rgba(255,255,255,1) 57%, rgba(255,255,255,1) 100%); /* W3C */ 
+	display:block;
+	padding:5px; 
+	border:1px solid #CCC; 
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+input[type="checkbox"]{
+	margin:15px 10px 15px 0;
+}
+
+p.divider_custom {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.2), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.2), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.2), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.2), rgba(0,0,0,0)); 
+}
+
+/*LayoutA*/
+.container_12 .leftcol{
+	margin:20px 10px;
+}
+.container_12 .rightcol{
+	margin:20px 0 0 20px;
+	width:280px;
+}
+
+
+/*Lowell's QA page*/
+.QASet{
+	border-bottom:1px dotted #DDD;
+	margin:0 0 5px 0;
+	padding:0 0 5px 0;
+}
+.QASet .question{
+    background-color: #FFF;
+    color: #333;
+		display: block;
+    padding:10px 10px 10px 0;
+		margin:0 0 10px;
+}
+.QASet .answer{
+    background-color: #F2F2F2;
+    color: #333;
+		display: block;
+    padding:10px;
+		position:relative;
+		margin:0 0 10px 40px;
+}
+.QASet .answer span{
+	background:url(../img/vzomega/tooltip_gray_arrow_up.png) no-repeat 0px 0px;
+	height:16px;
+	width:16px;
+	position:absolute;
+	left:20px;
+	top:-16px;
+}
+		
+.QASet q	{
+	color:#B00000;
+	float:left;
+	font-family:'VerizonApexBook', sans-serif;
+	*font-family:'VerizonApexMedium', sans-serif; /*IE7*/
+	font-family:'VerizonApexMedium'\9; /*>IE9*/
+	font-weight:bold;
+	font-size:36px;
+	line-height:36px;
+	margin:0;
+	padding:0;	
+}
+.QASet .answer q{
+	color:#777;	
+}
+.QASet .author{
+	font-size:14px;
+	font-weight:bold;
+	padding:0 0 10px 40px;
+}
+.QASet .author img{
+	border:1px solid #CCC;
+	height:32px;
+	margin-right:5px;
+}
+.QASet p{
+	color:#555;
+	font-size:14px;
+	font-style:italic;
+	margin:0;
+	padding:0 10px 0 40px;
+	text-align:justify;	
+}
+.QASet .InlineFieldset{
+	padding:0;
+	zoom:1;
+}
+.InlineFormWrapper{
+	padding:10px 10px 0 0;
+}
+.InlineFormWrapper input[type="text"],
+.InlineFormWrapper textarea{
+	margin-bottom:10px;
+	overflow:auto;
+	width:100%;
+}
+
+/*-------------------------------------------------------------
+General
+-------------------------------------------------------------*/
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+.dotted{
+	border-style:dotted;
+}
+
+/*-------------------------------------------------------------
+Header
+-------------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------
+Content
+-------------------------------------------------------------*/
+/*boxes*/
+.box_gray{
+	background:#F2F2F2;
+	border:1px solid #CCC;
+	color:#444;
+	font-size:12px;
+	padding:10px;
+	text-shadow:#FFF 0px 1px;
+}
+.box_yellow{
+	background:#FFF3A0;
+	border:1px solid #FFE432;
+	color:#555;
+	font-size:12px;
+	margin:0 0 10px;
+	padding:10px;
+	text-shadow:none;
+}
+
+/*Layout A2*/
+.coldivider_grid_8x4{
+  background:#FFF url(../img/vzomega/coldivider.png) repeat-y 639px 0px;
+	zoom:1;
+}
+/*Filters container*/
+.filters{
+	clear:both;
+	margin:0 0 20px;
+}
+.filters label,
+.filters select,
+.filters .vzbutton{
+	display:inline;
+	*float:left;/*IE7*/
+	margin-right:10px;
+}
+.filters label{
+	font-weight:bold;
+	padding:5px 0 0 0;
+}
+.filters select{
+	*margin-top:5px;
+}
+
+/*Right Column*/
+.rightcol h2{
+	margin-top:-6px;
+}
+.rightcol textarea{
+	margin:0;
+	padding:0;
+	width:245px;
+}
+.rightcol h2.custom{
+	font-family:'VerizonApexBold', sans-serif;
+	font-size:21px;
+	font-weight:normal;
+	line-height:18px;
+	margin:0;
+	padding:0 0 20px;
+	text-transform:uppercase;
+	text-shadow:1px 0px #FFF;
+}
+.rightcol .box_gray h2.custom{
+	padding-top:10px;
+	text-align:center;
+}
+.rightcol textarea{
+	color:#555;
+	font-size:14px;
+	line-height:19px;
+	margin:0 0 20px;
+	overflow:auto;
+	padding:5px;
+}
+.rightcol fieldset{
+	border:none;
+	float:none;
+	margin:0;
+	padding:10px 0;
+}
+.rightcol fieldset input[type="checkbox"]{
+	float:left;
+	margin:3px 10px 0 0;
+}
+.rightcol fieldset label{
+	overflow:hidden;
+}
+
+/*-------------------------------------------------------------
+Footer
+-------------------------------------------------------------*/
+footer{
+	margin:0 auto;
+	padding:10px 0;
+	width:960px;
+}
+footer p{
+	color:#777;
+	font-size:11px;
+	margin:0;
+	padding:0;
+}
+
+/*-------------------------------------------------------------
+Xtras
+-------------------------------------------------------------*/
+.container_12 {
+  /*background-image: url(../img/12_col.gif);*/
+}
+
+
+
+/*-------------------------------------------------------------
+Media Queries
+-------------------------------------------------------------*/
+
+@media only screen and (min-width: 1400px) {
+	
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1180px) {
+.container_12{
+	background:orange;
+}
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.container_12{
+	background:lightblue;
+}
+
+}
+
+
+@media only screen and (max-width: 767px) {
+		.container_12{
+	background:green;
+}
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+}
+
+@media only screen and (max-width: 480px) {
+	.container_12{
+	background:red;
+}
+}
+
+@media only screen and (max-width: 320px) {
+	.container_12{
+	background:yellow;
+}
+}
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	
+	
+}

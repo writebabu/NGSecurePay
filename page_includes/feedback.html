@@ -1,0 +1,27 @@
+<html>
+<head>
+</head>
+<body>
+<div style="padding-top:10px">
+<label for="name">Your Full Name: </label><br>
+<input type="text" maxlength="50" value="" style="width:380px" id="name" name="name">
+<label for="email">Email Address:</label>
+<input id="email" type="text" maxlength="50" style="width:380px" value="" name="email">
+<label for="message">Message:</label>
+<br>
+<textarea id="message" name="message" style="margin-bottom:10px;width:380px;height:140px" ></textarea>
+<div class="btnWrapper">
+  <div class="fl"><a href="#" title="View All" class="cancelSubmit button modalpopup cboxElement" ><span>Cancel</span></a></div>
+  <div class="fr"><a href="#" title="View All" class="cancelSubmit button modalpopup cboxElement" ><span>Submit</span></a> </div>
+
+</div>
+<script language="javascript">
+	$(document).ready(function(){
+		$(".cancelSubmit").bind("click",function(){
+			$.fn.modalpopup.close(); // To close the Popup
+		});
+	});
+</script>
+</div>
+</body>
+</html>

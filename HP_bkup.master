@@ -1,0 +1,112 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="HP.master.cs" Inherits="HP" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Verizon | VDSI Intranet</title>
+    <meta charset="utf-8" />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no' />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="includes/css/reset.css" />
+    <link rel="stylesheet" href="includes/css/text.css" />
+    <link rel="stylesheet" href="includes/css/960.css" />
+    <link rel="stylesheet" href="includes/css/jquery.modalpopup.css" />
+    <link rel="stylesheet" href="includes/css/buttons.css" />
+    <!--Custom Verizon CSS not part of 960gs-->
+    <link rel="stylesheet" href="includes/css/vzomegalight.css" />
+    <link rel="stylesheet" href="includes/css/global.css" />
+    <!--<link rel="stylesheet" href="includes/css/container.css" />  -->
+    <script src="includes/js/modernizr.js" type="text/javascript"></script>
+    <script src="includes/js/jquery.js" type="text/javascript"></script>
+    <script src="includes/js/slider.js" type="text/javascript"></script>
+    <script src="includes/js/modalpopup.js" type="text/javascript"></script>
+    <!--<script src="includes/js/yahoo-dom-event.js" type="text/javascript"></script>    
+    <script src="includes/js/popupwindow.js" type="text/javascript"></script>      -->
+    <!--Media Queries-->
+    <!-- Target iPhone -->
+    <link href="includes/css/handheld.css" media='only screen and (max-width: 480px)'
+        rel='stylesheet' type='text/css' />
+    <!-- Target iPad -->
+    <link rel="stylesheet" href="includes/css/tablet.css" media="only screen and (min-width:768px) and (max-width:1024px)" />
+    <!-- Target Galaxy Tab -->
+    <link rel="stylesheet" href="includes/css/tablet.css" media="only screen and (min-width:1280px) and (max-width:1280px)" />
+    <link rel="stylesheet" href="includes/css/tablet.css" media="only screen and (min-width:800px) and (max-width:800px)" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id="page">
+        <form id="form1" runat="server">
+        <header id="globalHeader">
+        <script language="javascript" type="text/javascript">
+            $('#globalHeader').load('page_includes/global_header2013.html', function () {
+                selectSubNav = 0; //-- Change the value to set selected sub nav item
+                $($('.globalnav li').get(selectSubNav)).addClass('active')
+            });
+        </script>
+        </header>
+        <!--Content START-->
+        <div class="content_container">
+            <div class="container_12">
+                <section id="title_section" style="border-bottom: none">
+		<div class="grid_8">
+			<h1 class="pagetitle"><asp:Label ID="lblPageHeading" runat="server"></asp:Label></h1>
+			<p class="breadcrumb">
+				<asp:Label ID="lblBreadCrumb" runat="server"></asp:Label>
+			</p>
+		</div>
+		<div class="grid_4">
+			<h2 class="user vztip bottomRight" rel="userTipContent"><span>Welcome <a href="javascript:;"><asp:Label ID="lblName1" runat="server"></asp:Label>!</a></span><i class="ix"></i><img src="images/content/userdefault_thmb.jpg" alt="Satya" title="Satya"/></h2>
+			<div class="tip_content " id="userTipContent" x="-4" y="3">
+				<div class="userInfo">
+					<img src="images/content/userdefault_large.jpg" alt="Satya" title="Satya" class="user"/>
+					<div class="userLinks">
+						<h3><asp:Label ID="lblName2" runat="server"></asp:Label></h3>
+						<a href="https://vzweb2.verizon.com/user/163120/edit">My Profile</a>
+                        <!--<a href="javascript:void(0);">View by EID</a>-->
+                        <a href="https://vzweb2.verizon.com/logout">Not <asp:Label ID="lblName3" runat="server"></asp:Label>?</a>
+						<div class="more">
+							<a href="https://vzweb2.verizon.com/user/logout">Sign Out</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clear">
+		</div>
+		</section>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                <!--Content END-->
+            </div>
+            <!--<div title="VZWeb Help" class="VZHelp">
+                <a class="modalpop" href="page_includes/popup.html" title="VDSI Intranet Help"></a>
+            </div>-->
+            <a href="http://vdsindia-test.vdsi.ent.verizon.com/IntranetHome/vdsicontact.aspx">
+                <div title="VZWeb Help" class="VZHelp">
+                </div>
+            </a>
+            <div title="VZWeb Feedback" class="FeedBack">
+                <img width="13" height="13" src="images/global/sm_tab_icon.gif" title="VZWeb Feedback"
+                    alt="VDSI Intranet">
+                <a title="VDSI Intranet Feedback" class="modalFBpop" href="page_includes/feedback.aspx">
+                </a>
+            </div>
+            <div id="globalfooter" class="content_container">
+                Copyright &copy;
+                <script>                    var year = new Date(); year = year.getYear(); if (year < 1900) year += 1900; document.write(year);</script>
+                &nbsp;Verizon &nbsp;<a href="http://vdsindia.verizon.com/authenticated/Homepages/VDSIInfo/VDSISitemap/Sitemap.aspx"
+                    target="_blank" title="Site Map">Site Map</a><span class="ft_div">|</span><a title="Contact VDSI Intranet"
+                        href="mailto:VDSI-Intranet@verizon.com">Contact VDSI Intranet</a><span class="ft_div">|</span><a
+                            title="eWeb" target="_blank" href="http://eweb.verizon.com/">eWeb</a>
+            </div>
+        </div>
+        </form>
+        <script src="includes/js/components.js" type="text/javascript"></script>
+        <script src="includes/js/plugin.js" type="text/javascript"></script>
+        <script language="javascript">
+            $(".modalpop").modalpopup({ width: "800px", height: "600px" });
+            $(".modalFBpop").modalpopup({ width: "420px", height: "365px" });        
+        </script>
+</body>
+</html>

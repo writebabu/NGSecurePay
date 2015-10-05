@@ -1,0 +1,161 @@
+/*Button*/
+.button_wrapper{overflow:hidden; width:100%;}
+
+
+/* Buttons - Large */
+a.button_gray_large{background:url('../../images/buttons/button_left.gif') 0 0 no-repeat; color:#000; display:block; float:left; font-size:13px; font-weight:bold; line-height:16px; height:32px; padding-left:15px; text-decoration:none; text-shadow:#FFF 0px 1px;}
+a.button_red_large{background:url('../../images/buttons/button_left.gif') 0 0 no-repeat; color:#FFF; display:block; float:left; font-size:13px; font-weight:bold; line-height:16px; height:32px; padding-left:15px; text-decoration:none; text-shadow:#000 0px 1px;}	
+a.button_black_large{background:url('../../images/buttons/button_left.gif') 0 0 no-repeat; color:#FFF; display:block; float:left; font-size:13px; font-weight:bold; line-height:16px; height:32px; padding-left:15px; text-decoration:none; text-shadow:#000 0px 1px;}
+
+a.button_red_large span, 
+a.button_black_large span, 
+a.button_gray_large span{background:url('../../images/buttons/button_right.gif') 100% 0 no-repeat; display:block; padding:7px 15px 9px 0px;}
+
+a.button_black_large:visited {color:#FFF}
+a.button_black_large:hover {background-position: 0 -32px;}
+a.button_black_large:hover span {background-position: 100% -32px;}
+
+a.button_gray_large {background-position: 0 -64px;}
+a.button_gray_large span {background-position: 100% -64px;}
+a.button_gray_large:visited {color:#000}
+a.button_gray_large:hover {background-position: 0 -96px;}
+a.button_gray_large:hover span {background-position: 100% -96px;}
+
+a.button_red_large {background-position: 0 -128px;}
+a.button_red_large span {background-position: 100% -128px;}
+a.button_red_large:visited {color:#FFF}
+a.button_red_large:hover {background-position: 0 -160px;}
+a.button_red_large:hover span {background-position: 100% -160px;}
+
+/*Red Button - Medium*/
+a.button_red_medium{background:transparent url('../../images/buttons/button_red_medium_left.gif') no-repeat top left; display:block; float:left; font-size:12px; font-weight:bold; line-height:16px; height:21px; padding-left:9px; text-decoration:none;}
+a:link.button_red_medium, a:visited.button_red_medium, a:active.button_red_medium{color:#FFFFFF; font-weight:bold;}
+a.button_red_medium span{background:transparent url('../../images/buttons/button_red_medium_right.gif') no-repeat top right; display:block; padding:2px 9px 3px 0px;}
+a.button_red_medium:hover{background-position:bottom left; text-decoration:none;}
+a.button_red_medium:hover span{background-position:bottom right;}
+
+/*Black Button - Medium*/
+a.button_black_medium{background:transparent url('../../images/buttons/button_black_medium_left.gif') no-repeat top left; display:block; float:left; font-size:12px; font-weight:bold; line-height:16px; height:21px; padding-left:9px; text-decoration:none;}
+a:link.button_black_medium, a:visited.button_black_medium, a:active.button_black_medium{color:#FFFFFF; font-weight:bold;}
+a.button_black_medium span{background:transparent url('../../images/buttons/button_black_medium_right.gif') no-repeat top right; display:block; padding:2px 10px 3px 0px;}
+a.button_black_medium:hover{background-position:bottom left; text-decoration:none;}
+a.button_black_medium:hover span{background-position:bottom right;}
+
+/*Gray Button - Medium*/
+a.button_gray_medium{background:transparent url('../../images/buttons/button_gray_medium_left.gif') no-repeat top left; display:block; float:left; font-size:12px; font-weight:bold; line-height:16px; height:21px; padding-left:9px; text-decoration:none;}
+a:link.button_gray_medium, a:visited.button_gray_medium, a:active.button_gray_medium{color:#000000; font-weight:bold;}
+a.button_gray_medium span{background:transparent url('../../images/buttons/button_gray_medium_right.gif') no-repeat top right; display:block; padding:2px 9px 3px 0px;}
+a.button_gray_medium:hover{background-position:bottom left; text-decoration:none;}
+a.button_gray_medium:hover span{background-position:bottom right;}
+
+/*Red Button - Small*/
+a.button_red_small{background:transparent url('../../images/buttons/button_red_small_left.gif') no-repeat top left; display:block; float:left; font-size:11px; font-weight:bold; line-height:12px; height:18px; padding-left:5px; text-decoration:none;}
+a:link.button_red_small, a:visited.button_red_small, a:active.button_red_small{color:#FFFFFF; font-weight:bold;}
+a.button_red_small span{background:transparent url('../../images/buttons/button_red_small_right.gif') no-repeat top right; display:block; padding:3px 4px 3px 0px;}
+a.button_red_small:hover{background-position:bottom left; text-decoration:none;}
+a.button_red_small:hover span{background-position:bottom right;}
+
+/*Black Button - Small*/
+a.button_black_small{background:transparent url('../../images/buttons/button_black_small_left.gif') no-repeat top left; display:block; float:left; font-size:11px; font-weight:bold; line-height:12px; height:18px; padding-left:5px; text-decoration:none;}
+a:link.button_black_small, a:visited.button_black_small, a:active.button_black_small{color:#FFFFFF; font-weight:bold;}
+a.button_black_small span{background:transparent url('../../images/buttons/button_black_small_right.gif') no-repeat top right; display:block; padding:3px 4px 3px 0px;}
+a.button_black_small:hover{background-position:bottom left; text-decoration:none;}
+a.button_black_small:hover span{background-position:bottom right;}
+
+/*Gray Button - Small*/
+a.button_gray_small{background:transparent url('../../images/buttons/button_gray_small_left.gif') no-repeat top left; display:block; float:left; font-size:11px; font-weight:bold; line-height:12px; height:18px; padding-left:5px; text-decoration:none;}
+a:link.button_gray_small, a:visited.button_gray_small, a:active.button_gray_small{color:#000000; font-weight:bold;}
+a.button_gray_small span{background:transparent url('../../images/buttons/button_gray_small_right.gif') no-repeat top right; display:block; padding:3px 4px 3px 0px;}
+a.button_gray_small:hover{background-position:bottom left; text-decoration:none;}
+a.button_gray_small:hover span{background-position:bottom right;}
+
+
+/*Input type buttons large*/
+
+#button_input_red_large .left{background:url('../../images/buttons/button_left_sprite1.gif') no-repeat scroll left -128px transparent; float:left; height:32px; width:5px; }
+#button_input_red_large input{background:url('../../images/buttons/button_mid_sprite1.gif') repeat-x scroll left -128px transparent; border:medium none; color:#FFFFFF; cursor:pointer; float:left; font-size:13px; font-weight:bold; height:32px; margin:0; padding:2px 10px 4px 10px; vertical-align:top; overflow:visible; font-family:Arial, Helvetica, sans-serif;}
+#button_input_red_large .right{background:url('../../images/buttons/button_right_sprite1.gif') no-repeat scroll right -128px transparent; float:left; height:32px; width:5px;}
+
+#button_input_black_large .left{background:url('../../images/buttons/button_left_sprite1.gif') no-repeat scroll left 0 transparent; float:left; height:32px; width:5px;}
+#button_input_black_large input{background:url('../../images/buttons/button_mid_sprite1.gif') repeat-x scroll left 0px transparent; border:medium none; color:#FFF; cursor:pointer; float:left; font-size:13px; font-weight:bold; height:32px; margin:0; padding:2px 10px 4px 10px; vertical-align:top; overflow:visible; font-family:Arial, Helvetica, sans-serif;}
+#button_input_black_large .right{background:url('../../images/buttons/button_right_sprite1.gif') no-repeat scroll right 0 transparent; float:left; height:32px; width:5px;}
+
+#button_input_gray_large .left{background:url('../../images/buttons/button_left_sprite1.gif') no-repeat scroll left -64px transparent; float:left; height:32px; width:5px;}
+#button_input_gray_large input{background:url('../../images/buttons/button_mid_sprite1.gif') repeat-x scroll left -64px transparent; border:medium none; color:#000; cursor:pointer; float:left; font-size:13px; font-weight:bold; height:32px; margin:0; padding:2px 10px 4px 10px; vertical-align:top; overflow:visible; font-family:Arial, Helvetica, sans-serif;}
+#button_input_gray_large .right{background:url('../../images/buttons/button_right_sprite1.gif') no-repeat scroll right -64px transparent; float:left; height:32px; width:5px;}
+
+/*Input type buttons medium*/
+
+#button_input_red_medium .left{background:url('../../images/buttons/button_left_sprite2.gif') no-repeat scroll left -84px transparent; float:left; height:21px; width:5px; }
+#button_input_red_medium input{background:url('../../images/buttons/button_mid_sprite2.gif') repeat-x scroll left -84px transparent; border:medium none; color:#FFFFFF; cursor:pointer; float:left; font-size:12px; font-weight:bold; height:21px; margin:0; padding:2px 0px 8px 0px; vertical-align:top; overflow:visible; font-family:Arial, Helvetica, sans-serif;}
+#button_input_red_medium .right{background:url('../../images/buttons/button_right_sprite2.gif') no-repeat scroll right -84px transparent; float:left; height:21px; width:5px;}
+
+#button_input_black_medium .left{background:url('../../images/buttons/button_left_sprite2.gif') no-repeat scroll left 0px transparent; float:left; height:21px; width:5px; }
+#button_input_black_medium input{background:url('../../images/buttons/button_mid_sprite2.gif') repeat-x scroll left 0px transparent; border:medium none; color:#FFFFFF; cursor:pointer; float:left; font-size:12px; font-weight:bold; height:21px; margin:0; padding:2px 0px 8px 0px; vertical-align:top; overflow:visible; font-family:Arial, Helvetica, sans-serif;}
+#button_input_black_medium .right{background:url('../../images/buttons/button_right_sprite2.gif') no-repeat scroll right 0px transparent; float:left; height:21px; width:5px;}
+
+#button_input_gray_medium .left{background:url('../../images/buttons/button_left_sprite2.gif') no-repeat scroll left -42px transparent; float:left; height:21px; width:5px; }
+#button_input_gray_medium input{background:url('../../images/buttons/button_mid_sprite2.gif') repeat-x scroll left -42px transparent; border:medium none; color:#000; cursor:pointer; float:left; font-size:12px; font-weight:bold; height:21px; margin:0; padding:2px 0px 8px 0px; vertical-align:top; overflow:visible; font-family:Arial, Helvetica, sans-serif;}
+#button_input_gray_medium .right{background:url('../../images/buttons/button_right_sprite2.gif') no-repeat scroll right -42px transparent; float:left; height:21px; width:5px;}
+
+/*Input type buttons small*/
+
+#button_input_red_small .left{background:url('../../images/buttons/button_left_sprite3.gif') no-repeat scroll left -72px transparent; float:left; height:18px; width:5px; }
+#button_input_red_small input{background:url('../../images/buttons/button_mid_sprite3.gif') repeat-x scroll left -72px transparent; border:medium none; color:#FFFFFF; cursor:pointer; float:left; font-size:11px; font-weight:bold; height:18px; margin:0; padding:0 0 2px 0; vertical-align:top; overflow:visible; font-family:Arial, Helvetica, sans-serif;}
+#button_input_red_small .right{background:url('../../images/buttons/button_right_sprite3.gif') no-repeat scroll right -72px transparent; float:left; height:18px; width:5px;}
+
+#button_input_black_small .left{background:url('../../images/buttons/button_left_sprite3.gif') no-repeat scroll left 0px transparent; float:left; height:18px; width:5px; }
+#button_input_black_small input{background:url('../../images/buttons/button_mid_sprite3.gif') repeat-x scroll left 0px transparent; border:medium none; color:#FFFFFF; cursor:pointer; float:left; font-size:11px; font-weight:bold; height:18px; margin:0; padding:0 0 2px 0; vertical-align:top; overflow:visible; font-family:Arial, Helvetica, sans-serif;}
+#button_input_black_small .right{background:url('../../images/buttons/button_right_sprite3.gif') no-repeat scroll right 0px transparent; float:left; height:18px; width:5px;}
+
+#button_input_gray_small .left{background:url('../../images/buttons/button_left_sprite3.gif') no-repeat scroll left -36px transparent; float:left; height:18px; width:5px; }
+#button_input_gray_small input{background:url('../../images/buttons/button_mid_sprite3.gif') repeat-x scroll left -36px transparent; border:medium none; color:#000; cursor:pointer; float:left; font-size:11px; font-weight:bold; height:18px; margin:0; padding:0 0 2px 0; vertical-align:top; overflow:visible; font-family:Arial, Helvetica, sans-serif;}
+#button_input_gray_small .right{background:url('../../images/buttons/button_right_sprite3.gif') no-repeat scroll right -36px transparent; float:left; height:18px; width:5px;}
+
+/* Inputs bottom spacing */
+
+#button_input_red_medium,#button_input_black_medium,#button_input_gray_medium,
+#button_input_red_small,#button_input_black_small,#button_input_gray_small{ padding-bottom:10px; float:left;}
+
+
+/* Disable buttons */
+
+a.button_red_large.disabled, a.button_black_large.disabled, a.button_red_medium.disabled, a.button_black_medium.disabled, a.button_red_small.disabled, a.button_black_small.disabled{opacity:0.5; filter:alpha(opacity = 50); color:#aaa; cursor:default;}
+a.button_gray_large.disabled, a.button_gray_medium.disabled, a.button_gray_small.disabled{opacity:0.5; filter:alpha(opacity = 50); color:#888; cursor:default;}
+
+a.button_red_large.disabled:hover{background-position:0 -128px; text-decoration:none;}
+a.button_red_large.disabled span:hover{background-position:100% -128px; text-decoration:none;}
+
+a.button_black_large.disabled:hover{background-position:0 0; text-decoration:none;}
+a.button_black_large.disabled span:hover{background-position:100% 0; text-decoration:none;}
+
+a.button_gray_large.disabled:hover{background-position:0 -64px; text-decoration:none;}
+a.button_gray_large.disabled span:hover{background-position:100% -64px; text-decoration:none;}
+
+
+a.button_red_medium.disabled:hover{background-position:0 0; text-decoration:none;}
+a.button_red_medium.disabled span:hover{background-position:100% 0; text-decoration:none;}
+
+a.button_black_medium.disabled:hover{background-position:0 0; text-decoration:none;}
+a.button_black_medium.disabled span:hover{background-position:100% 0; text-decoration:none;}
+
+a.button_gray_medium.disabled:hover{background-position:0 0; text-decoration:none;}
+a.button_gray_medium.disabled span:hover{background-position:100% 0; text-decoration:none;}
+
+
+a.button_red_small.disabled:hover{background-position:0 0; text-decoration:none;}
+a.button_red_small.disabled span:hover{background-position:100% 0; text-decoration:none;}
+
+a.button_black_small.disabled:hover{background-position:0 0; text-decoration:none;}
+a.button_black_small.disabled span:hover{background-position:100% 0; text-decoration:none;}
+
+a.button_gray_small.disabled:hover{background-position:0 0; text-decoration:none;}
+a.button_gray_small.disabled span:hover{background-position:100% 0; text-decoration:none;}
+
+
+#button_input_red_large.disabled, #button_input_black_large.disabled, #button_input_gray_large.disabled, #button_input_red_medium.disabled, #button_input_black_medium.disabled, #button_input_gray_medium.disabled, #button_input_red_small.disabled, #button_input_black_small.disabled, #button_input_gray_small.disabled{opacity:0.5; filter:alpha(opacity = 50); color:#aaa; cursor:default;}
+
+#button_input_red_large.disabled input, #button_input_black_large.disabled input, #button_input_red_medium.disabled input, #button_input_black_medium.disabled input, #button_input_red_small.disabled input, #button_input_black_small.disabled input{color:#aaa; cursor:default;}
+
+#button_input_gray_large.disabled input, #button_input_gray_medium.disabled input, #button_input_gray_small.disabled input{color:#888; cursor:default;}
+

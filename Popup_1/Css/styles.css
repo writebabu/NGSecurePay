@@ -1,0 +1,130 @@
+html, body {
+	height: 100%;
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+.l_popup {
+	font-size:21px;
+	z-index: 99999;
+	display: none;
+	position: absolute;
+	opacity: 1;
+	padding: 2px;
+	bottom:0px;
+	right: 185px;
+	right: 0px\9;
+	bottom: 0px\9;
+	width: 800px\9;
+	/*box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);*/
+}
+
+.close_l_popup {
+	position: absolute;
+	z-index: 99999;
+	background: transparent url('../images/button-close.png') no-repeat;
+	display: block;
+	padding: 14px;
+	cursor: pointer;
+	right: 10px;
+	top: 0px;
+	right: 195px\9;
+	top: 0px\9;
+}
+.btn_apply {
+	color: #fff;
+	background: transparent url('../images/button-apply.png') no-repeat;
+	font-size: 18px;
+	width: 107px;
+	height: 35px;
+	line-height: 30px;
+	line-height: 32px\9;
+	text-align: center;
+	text-decoration: none;
+	position: absolute;
+	
+}
+.container {
+	background: url("../images/bg.png");
+	width:558px;
+	height: 333px;
+	padding: 2px;
+ 	/*filter: progid:DXImageTransform.Microsoft.Shadow(color=#888888, direction=0, strength=6)  
+			progid:DXImageTransform.Microsoft.Shadow(color=#888888, direction=90, strength=6)  
+			progid:DXImageTransform.Microsoft.Shadow(color=#888888, direction=180, strength=6)  
+			progid:DXImageTransform.Microsoft.Shadow(color=#888888, direction=270, strength=6);*/
+}
+.heading {
+	width: 100%;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 38px;
+	padding-top:16px;
+	color: #FFF;
+}
+.clear {
+	clear: both;
+}
+.divider {
+	/*border-left: 1px solid #d0d0d0;
+	border-right: 1px solid #f7f7f7;
+	height: 50px;
+	margin-top: 20px;*/
+}
+.head {
+	font-size: 28px;
+	font-weight: normal;
+	color: #bd1823;
+}
+.and {
+	color: #6e6e6e;
+	padding-top: 10px;
+}
+.box {
+	float: left;
+	padding: 10px 30px 15px 30px;
+}
+.positions {
+	color: #6e6e6e;
+	padding-left: 20px;
+}
+.fl_left {
+	float: left;
+}
+.hand {
+	background: transparent url('../images/hand.png') no-repeat;
+	height: 378px;
+	width: 239px;
+	Position: absolute;
+	z-index: 99999;
+	right: -184px;
+	right: 0px\9;
+	top: 127px;
+}
+.apply {
+	text-align: center;
+	float: left;
+}
+.rt_col {
+	line-height: 24px;
+	margin-top: 24px;
+	float: right;
+	text-align: left;
+	padding-right: 40px;
+}
+.lt_col {
+	line-height: 24px;
+	margin: 24px 10px 30px 40px;
+	float: left;
+	text-align: left;
+	padding-right: 10px;
+}
+.update {
+	font-size:18px;
+	padding-top: 50px;
+	text-align: right;
+	margin-right: 40px;
+	color: #000000;
+}

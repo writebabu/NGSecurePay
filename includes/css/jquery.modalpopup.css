@@ -1,0 +1,63 @@
+
+
+/* MODAL POPUP
+----------------------------------*/
+#colorbox, #cboxOverlay, #cboxWrapper {  z-index:999; position:absolute; top:0; left:0; overflow:hidden; }
+#cboxOverlay { position:fixed; width:100%; height:100%; z-index:888; }
+#cboxMiddleLeft, #cboxBottomLeft { clear:left; }
+#cboxContent { position:relative; }
+#cboxLoadedContent { overflow:auto; font-size:12px; font-weight:normal; }
+#cboxLoadedContent p{padding-bottom:15px; font-size:12px;}
+#cboxTitle { margin:0; height:30px; }
+#cboxLoadingOverlay, #cboxLoadingGraphic { position:absolute; top:0; left:0; width:100%; }
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow { cursor:pointer; }
+.cboxPhoto { float:left; margin:auto; border:0; display:block; }
+.cboxIframe { width:100%; height:100%; display:block; border:0; }
+#cboxOverlay { background:#000; }
+#cboxContent { background:#fff; overflow:hidden; }
+#cboxError { padding:50px; border:1px solid #ccc; }
+#cboxLoadedContent { margin-top:49px; *margin-top:49px; padding:0 15px 9px;}
+#cboxTitle { position:absolute; top:0; left:0; text-align:left; width:100%; color:#000; font-size:24px; font-weight:bold; border-bottom:solid 1px #af0000; padding-bottom:10px; padding-top:8px; /*text-transform:uppercase;*/ }
+#cboxCurrent { position:absolute; bottom:4px; left:58px; color:#949494; }
+#cboxSlideshow { position:absolute; bottom:4px; right:30px; color:#0092ef; }
+#cboxPrevious { position:absolute; bottom:0; left:0; background:url(../../images/popup/controls.png) no-repeat -75px 0; width:25px; height:25px; text-indent:-9999px; }
+#cboxPrevious.hover { background-position:-75px -25px; }
+#cboxNext { position:absolute; bottom:0; left:27px; background:url(../../images/popup/controls.png) no-repeat -50px 0; width:25px; height:25px; text-indent:-9999px; }
+#cboxNext.hover { background-position:-50px -25px; }
+#cboxClose { position:absolute; top:0; right:0; /* width:50px; height:20px; text-indent:-9999px;*/ }
+.cboxIE, .cboxIE6 { z-index:8888; }
+.cboxIE #cboxTopLeft, .cboxIE #cboxTopCenter, .cboxIE #cboxTopRight, .cboxIE #cboxBottomLeft, .cboxIE #cboxBottomCenter, .cboxIE #cboxBottomRight, .cboxIE #cboxMiddleLeft, .cboxIE #cboxMiddleRight { filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF, endColorstr=#00FFFFFF);}
+.cboxIE6 #cboxTopLeft { background:url(../../images/popup/ie6/borderTopLeft.png); }
+.cboxIE6 #cboxTopCenter { background:url(../../images/popup/ie6/borderTopCenter.png); }
+.cboxIE6 #cboxTopRight { background:url(../../images/popup/ie6/borderTopRight.png); }
+.cboxIE6 #cboxBottomLeft { background:url(../../images/popup/ie6/borderBottomLeft.png); }
+.cboxIE6 #cboxBottomCenter { background:url(../../images/popup/ie6/borderBottomCenter.png); }
+.cboxIE6 #cboxBottomRight { background:url(../../images/popup/ie6/borderBottomRight.png); }
+.cboxIE6 #cboxMiddleLeft { background:url(../../images/popup/ie6/borderMiddleLeft.png); }
+.cboxIE6 #cboxMiddleRight { background:url(../../images/popup/ie6/borderMiddleRight.png); }
+.cboxIE6 #cboxTopLeft, .cboxIE6 #cboxTopCenter, .cboxIE6 #cboxTopRight, .cboxIE6 #cboxBottomLeft, .cboxIE6 #cboxBottomCenter, .cboxIE6 #cboxBottomRight, .cboxIE6 #cboxMiddleLeft, .cboxIE6 #cboxMiddleRight { _behavior: expression(this.src = this.src ? this.src : this.currentStyle.backgroundImage.split('"')[1], this.style.background = "none", this.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=" + this.src + ", sizingMethod='scale')");}
+#cboxContent .divider { border-bottom:1px solid #CCC; clear:both; margin:0px 0px 7px 0px; }
+.btnWrapper { border-top:1px solid #CCC; clear:both; margin:0px 0px 7px 0px; padding-top:8px; }
+.btnWrapper .fr { float:right; }
+.btnWrapper .fl { float:left; }
+#cboxWrapper { -webkit-box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.4); -moz-box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.4); box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.4); }
+#cboxContent { padding:0px; background: #FFF; }
+#cboxTitle { margin:0 0px; padding:8px 15px 10px; width:98%; }
+#cboxClose { right: 15px;  top: 12px; display: inline-block; 
+text-decoration: none; outline: none; cursor: pointer; 
+font: normal 12px/1em Arial, sans-serif; padding:0;  color: #555; 
+text-shadow: 0 1px 0 #fff; 
+background: #fdfdfd; /* Old browsers */ 
+background: -moz-linear-gradient(top, #fdfdfd 0%, #dfdfdf 100%); /* FF3.6+ */ 
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fdfdfd), color-stop(100%, #dfdfdf)); /* Chrome,Safari4+ */ 
+background: -webkit-linear-gradient(top, #fdfdfd 0%, #dfdfdf 100%); /* Chrome10+,Safari5.1+ */ 
+background: -o-linear-gradient(top, #fdfdfd 0%, #dfdfdf 100%); /* Opera 11.10+ */
+ background: -ms-linear-gradient(top, #fdfdfd 0%, #dfdfdf 100%); /* IE10+ */ background: linear-gradient(top, #fdfdfd 0%, #dfdfdf 100%); /* W3C */ 
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='#dfdfdf', GradientType=0 ); /* IE6-9 */
+border:solid 1px #999999;
+text-align:center;  }
+#cboxClose span{border-top:solid 1px #FFF; display: inline-block; padding: 5px 8px 6px 22px; background:url(../../images/popup/close.png) 7px 7px no-repeat; }
+#cboxContent .titlebox { display:none; }
+
+#cboxLoadedContent p.pb10{padding-bottom:10px;}
+#cboxLoadedContent p.npb{padding-bottom:0;}

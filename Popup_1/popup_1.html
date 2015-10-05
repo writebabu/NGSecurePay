@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<title>Popups</title>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+<meta name="viewport" content="target-densitydpi=device-dpi; width=device-width; initial-scale = 1.0; maximum-scale=1.0; user-scalable=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+<script type="text/javascript" src="Js/jquery.js"></script>
+<link rel="stylesheet" type="text/css" href="Css/styles.css"/>
+</head>
+<body onload="$('div.selectlocation').show();" style="height:1000px;">
+<div class="selectlocation l_popup">
+  <div class="close_l_popup"></div>
+  <div class="container" style="margin-left:54px\9">
+    <div class="heading">99 New IJP Openings!!</div>
+    <div class="lt_col">
+      <div> <span style="color: #bd1823;">Java</span> : <span style="color: #2a5fff;">63 Positions</div>
+      <div> <span style="color: #bd1823;">C++</span> : <span style="color: #2a5fff;">5 Positions</div>
+      <div> <span style="color: #bd1823;">HTML5</span> : <span style="color: #2a5fff;">5 Positions</div>
+    </div>
+    <div class="rt_col">
+      <div> <span style="color: #bd1823;">Android</span> : <span style="color: #2a5fff;">5 Positions</div>
+      <div> <span style="color: #bd1823;">iPhone</span> : <span style="color: #2a5fff;">3 Positions</div>
+      <div> <span style="color: #000000;">and many more...</div>
+    </div>
+    <div class="clear">    </div>
+    <div style="margin-left:38%;"> <a href="#" class="btn_apply">Apply Now</a> </div>
+    <div class="update">Updated on - 20th Feb, 2013</div>
+  </div>
+  <div style="width:200px; margin-left:50px\9;">
+    <div class="hand"></div>
+  </div>
+</div>
+<script type="text/javascript" src="Js/function.js"></script> 
+<script type="text/javascript">
+$(document).ready(function () {
+
+$(".l_popup").animate({
+  bottom : "190px",
+}, 700);
+$('body').delay(700).queue(function(){
+	 $(this).css('overflow', 'auto');
+});	
+$(".l_popup").delay(700).queue(function(){
+	 $(this).css('position', 'fixed');
+});
+});
+</script>
+</body>
+</html>
